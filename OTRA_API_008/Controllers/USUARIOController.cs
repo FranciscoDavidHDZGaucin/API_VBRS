@@ -6,9 +6,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace OTRA_API_008.Controllers
 {
+    [EnableCors(origins: "http://192.168.101.128/", headers: "*", methods: "*")]
     public class USUARIOController : ApiController
     {
         public String Get()
