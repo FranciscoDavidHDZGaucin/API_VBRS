@@ -73,7 +73,8 @@ namespace OTRA_API_008.Models
                                         ANIO = Convert.ToInt32(rw["anio"]),
                                         USUARIO = Convert.ToInt32(rw["USUARIO"]),
                                         TYPE_DOCTO = Convert.ToString(rw["TYPE_DOCTO"]),
-                                        NAME_DOCTO = Convert.ToString(rw["NAME_DOCTO"])
+                                        NAME_DOCTO = Convert.ToString(rw["NAME_DOCTO"]),
+                                        NOM_AGENTE = Convert.ToString(rw["NOM_AGENTE"])
 
 
                                     }
@@ -96,7 +97,8 @@ namespace OTRA_API_008.Models
                                       ANIO = Convert.ToInt32(rw["anio"]),
                                       USUARIO = Convert.ToInt32(rw["USUARIO"]),
                                       TYPE_DOCTO = Convert.ToString(rw["TYPE_DOCTO"]),
-                                      NAME_DOCTO = Convert.ToString(rw["NAME_DOCTO"])
+                                      NAME_DOCTO = Convert.ToString(rw["NAME_DOCTO"]),
+                                      NOM_AGENTE = Convert.ToString(rw["NOM_AGENTE"])
 
 
                                   }

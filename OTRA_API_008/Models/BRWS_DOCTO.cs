@@ -19,6 +19,8 @@ namespace OTRA_API_008.Models
 
         public String NAME_DOCTO { get; set;  }
 
+        public string NOM_AGENTE { get; set; }
+
     }
     public class BRWS_TRASPORTE
     {
@@ -34,6 +36,7 @@ namespace OTRA_API_008.Models
         public String TYPE_DOCTO { get; set; }
 
         public String NAME_DOCTO { get; set; }
+        public string NOM_AGENTE { get; set; }
 
 
     }
