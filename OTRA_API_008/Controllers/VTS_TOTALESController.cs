@@ -1,4 +1,5 @@
-﻿using OTRA_API_008.Models;
+﻿using Newtonsoft.Json.Linq;
+using OTRA_API_008.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,10 +13,10 @@ namespace OTRA_API_008.Controllers
     public class VTS_TOTALESController : ApiController
     {
 
-        public DataTable  Get(int typeres )
+        public JArray Get(int typeres )
         {
             VTS_TOTALES VSTOTALES = new VTS_TOTALES();
-            DataTable result = new DataTable(); 
+            JArray result = new JArray(); 
             if (typeres == 21202025) {
                 result =  VSTOTALES.VTS_TODAS_TTAL_GRAFIC_COSTOS();
             }

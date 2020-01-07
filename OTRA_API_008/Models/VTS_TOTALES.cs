@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -39,7 +41,7 @@ namespace OTRA_API_008.Models
 
       
 
-        public DataTable VTS_TODAS_NORMALIZADAS()
+        public Newtonsoft.Json.Linq.JArray VTS_TODAS_NORMALIZADAS()
         {
             DataTable dtvts = new DataTable();
             try
@@ -100,11 +102,13 @@ namespace OTRA_API_008.Models
             {
                 dtvts = new DataTable();
             }
+            var jsonresult = JsonConvert.SerializeObject(dtvts);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
 
-            return dtvts;
+            return Areglo_JSON;
         }
 
-        public DataTable VTS_TODAS_TTAL_GRAFIC_COSTOS()
+        public Newtonsoft.Json.Linq.JArray VTS_TODAS_TTAL_GRAFIC_COSTOS()
         {
             ///sp_CASIILLAS_TOTAL_GRAFIC_COSTO
             DataTable RESULT = new DataTable();
@@ -149,7 +153,7 @@ namespace OTRA_API_008.Models
                             RESULT.Columns.Add("PLTF_CMG", typeof(Double));
                             RESULT.Columns.Add("PLTF_CMG_PORCENTAGE", typeof(Double));
 
-                            RESULT.Rows.Add(TotalMes, TotCMG_TOTAL, ToCosto_TOTAL, TotCMG_porce);
+                            RESULT.Rows.Add(TotalMes, ToCosto_sp_CTTAL_GRFCCST, PLTF_CMG, PLTF_CMG_PORCENTAGE);
 
 
 
@@ -170,7 +174,11 @@ namespace OTRA_API_008.Models
 
                 RESULT = new DataTable();
             }
-            return RESULT;
+
+            var jsonresult = JsonConvert.SerializeObject(RESULT);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
+
+            return Areglo_JSON;
 
 
         }
