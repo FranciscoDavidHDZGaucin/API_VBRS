@@ -172,6 +172,7 @@
     <Compile Include="Controllers\FolioTransprtController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReclamoMailController.cs" />
+    <Compile Include="Controllers\RECLAMOSERVICIOController.cs" />
     <Compile Include="Controllers\SenmailCalidadController.cs" />
     <Compile Include="Controllers\USUARIOController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
