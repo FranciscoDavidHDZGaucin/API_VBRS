@@ -14,13 +14,13 @@ namespace OTRA_API_008.Controllers
 {
     public class VTS_NOTAS_CREDController : ApiController
     {
-        public JArray Get(int typeres)
+        public JArray Get(DateTime ini, DateTime fin)
         {
             VRS_VTS_NOTA_CRED VTSFECHA = new VRS_VTS_NOTA_CRED();
             JArray result = new JArray();
             var date1 = new DateTime(2020, 2, 1);
             var date2 = new DateTime(2020, 2, 17);
-            result = VTSFECHA.VTS_NOTA_CRED();
+            result = VTSFECHA.VTS_NOTA_CRED(ini, fin);
 
             return result;
         }

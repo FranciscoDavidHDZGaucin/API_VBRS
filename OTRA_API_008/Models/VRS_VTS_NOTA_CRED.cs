@@ -23,7 +23,7 @@ namespace OTRA_API_008.Models
 
         public List<DataTable> _RES_TOTALES = null;
 
-        public Newtonsoft.Json.Linq.JArray VTS_NOTA_CRED()
+        public Newtonsoft.Json.Linq.JArray VTS_NOTA_CRED(DateTime Fini, DateTime Ffin)
         {
             DataTable dtvts = new DataTable();
             try
@@ -36,9 +36,9 @@ namespace OTRA_API_008.Models
 
                         COMANDO.CommandType = CommandType.StoredProcedure;
                         COMANDO.Parameters.Add("@INI_FCH", SqlDbType.DateTime);
-                        COMANDO.Parameters["@INI_FCH"].Value = "2020-02-01";
+                        COMANDO.Parameters["@INI_FCH"].Value = Fini;
                         COMANDO.Parameters.Add("@FIN_FCH", SqlDbType.DateTime);
-                        COMANDO.Parameters["@FIN_FCH"].Value = "2020-02-21";
+                        COMANDO.Parameters["@FIN_FCH"].Value = Ffin;
                         drd = COMANDO.ExecuteReader();
 
                         if (drd.Read())
