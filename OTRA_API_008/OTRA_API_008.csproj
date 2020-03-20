@@ -207,6 +207,7 @@
     <Compile Include="Controllers\VTS_FECHAController.cs" />
     <Compile Include="Controllers\VTS_NOTAS_CREDController.cs" />
     <Compile Include="Controllers\VTS_TOTALESController.cs" />
+    <Compile Include="Controllers\VTS_TOTLS_GOPCController.cs" />
     <Compile Include="Controllers\VTS_VS_GOPCController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
