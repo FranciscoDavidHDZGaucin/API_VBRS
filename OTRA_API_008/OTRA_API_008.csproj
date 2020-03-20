@@ -221,6 +221,7 @@
     <Compile Include="Models\VRS_VTS_FECHA.cs" />
     <Compile Include="Models\VRS_VTS_NOTA_CRED.cs" />
     <Compile Include="Models\VTS_TOTALES.cs" />
+    <Compile Include="Models\VTS_TOTLS_GOPC.cs" />
     <Compile Include="Models\VTS_VS_GOPC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
