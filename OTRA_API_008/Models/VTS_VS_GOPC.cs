@@ -74,7 +74,7 @@ namespace OTRA_API_008.Models
                             TotCMGReal = TotCMG + TotNOTAS;
 
                             pctVts = (TotMontoReal * 100) / TotMontoGOPC;
-                            pctCMG = (TotCMG * 100) / TotCMGGOPC;
+                            pctCMG = (TotCMGReal * 100) / TotCMGGOPC;
                             pctPCTCMG = (TotPCTCMG * 100) / TotPCTCMGGOPC;
 
                             _TotMonto = String.Format("$ #,###,##0.00", TotMonto);
