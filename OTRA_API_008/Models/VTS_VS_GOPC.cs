@@ -70,12 +70,12 @@ namespace OTRA_API_008.Models
                             TotPCTCMGGOPC = Convert.ToDouble(drd["PCTCMGGOPC"]);
                             TotNOTAS = Convert.ToDouble(drd["NOTAS"]);
 
-                            TotMontoReal = TotMonto + TotNOTAS;
-                            TotCMGReal = TotCMG + TotNOTAS;
+                            TotMontoReal = TotMonto;//+ TotNOTAS;
+                            TotCMGReal = TotCMG;///+ TotNOTAS;
 
                             pctVts = (TotMontoReal * 100) / TotMontoGOPC;
                             pctCMG = (TotCMGReal * 100) / TotCMGGOPC;
-                            pctPCTCMG = (TotPCTCMG * 100) / TotPCTCMGGOPC;
+                            pctPCTCMG = (TotCMG* TotPCTCMGGOPC) / TotCMGGOPC;
 
                             _TotMonto = String.Format("$ #,###,##0.00", TotMonto);
                             _TotCMG_TOTAL = String.Format("$ #,###,##0.00", TotCMG);

@@ -204,6 +204,7 @@
     <Compile Include="Controllers\SenmailCalidadController.cs" />
     <Compile Include="Controllers\USUARIOController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\VRSVENTAS_YNC__RSGDController.cs" />
     <Compile Include="Controllers\VTS_FECHAController.cs" />
     <Compile Include="Controllers\VTS_NOTAS_CREDController.cs" />
     <Compile Include="Controllers\VTS_TOTALESController.cs" />
@@ -219,6 +220,7 @@
     <Compile Include="Models\RECLAMOS_BD_MAIL.cs" />
     <Compile Include="Models\SMT_MAIL.cs" />
     <Compile Include="Models\USUARIO.cs" />
+    <Compile Include="Models\VERSA_VTS_VS_GOPC_SP.cs" />
     <Compile Include="Models\VRS_VTS_FECHA.cs" />
     <Compile Include="Models\VRS_VTS_NOTA_CRED.cs" />
     <Compile Include="Models\VTS_TOTALES.cs" />
