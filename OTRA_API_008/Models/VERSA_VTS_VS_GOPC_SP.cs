@@ -113,10 +113,14 @@ namespace OTRA_API_008.Models
                                     NOM_AGENTE = drd["NOM_AGENTE"].ToString(),
                                     CANTIDAD = Convert.ToInt32(drd["CANTIDAD"]),
 
-                                    COSTO = Convert.ToDecimal(drd["NUM_DOCTO"]),
-                                    MONTO = Convert.ToDecimal(drd["NUM_DOCTO"]),
-                                    CMG = Convert.ToDecimal(drd["NUM_DOCTO"]),
-                                    SEM_PROGRAMADA = Convert.ToInt32(drd["SEM_PROGRAMADA"]),
+                                    COSTO = Convert.ToString(drd["COSTO"]),
+                                    MONTO = Convert.ToString(drd["MONTO"]),
+                                    CMG = Convert.ToString(drd["CMG"]),
+
+                                   
+
+
+                                 SEM_PROGRAMADA = Convert.ToInt32(drd["SEM_PROGRAMADA"]),
 
                                     CLAS_CREDITO = drd["CLAS_CREDITO"].ToString(),
 
@@ -243,9 +247,9 @@ namespace OTRA_API_008.Models
         public int CCOD_AGENTE { get; set; }
         public string NOM_AGENTE { get; set; }
         public int CANTIDAD { get; set; }
-        public decimal COSTO { get; set; }
-        public decimal MONTO { get; set; }
-        public decimal CMG { get; set; }
+        public string COSTO { get; set; }
+        public string MONTO { get; set; }
+        public string CMG { get; set; }
         public int SEM_PROGRAMADA { get; set; }
         public string CLAS_CREDITO { get; set; }
         public DateTime FECHA_DOCTO { get; set; }
