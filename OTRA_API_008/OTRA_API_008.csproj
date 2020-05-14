@@ -206,6 +206,7 @@
     <Compile Include="Controllers\USUARIOController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\VRSVENTAS_YNC__RSGDController.cs" />
+    <Compile Include="Controllers\VTS_DETALLEController.cs" />
     <Compile Include="Controllers\VTS_FECHAController.cs" />
     <Compile Include="Controllers\VTS_NOTAS_CREDController.cs" />
     <Compile Include="Controllers\VTS_TOTALESController.cs" />
@@ -225,6 +226,7 @@
     <Compile Include="Models\VERSA_VTS_VS_GOPC_SP.cs" />
     <Compile Include="Models\VRS_VTS_FECHA.cs" />
     <Compile Include="Models\VRS_VTS_NOTA_CRED.cs" />
+    <Compile Include="Models\VTS_DETALLE.cs" />
     <Compile Include="Models\VTS_TOTALES.cs" />
     <Compile Include="Models\VTS_TOTLS_GOPC.cs" />
     <Compile Include="Models\VTS_VS_GOPC.cs" />
