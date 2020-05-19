@@ -16,6 +16,11 @@ namespace OTRA_API_008.Models
         private SqlDataReader drd;
         // private SqlDataReader DRD;
 
+        private  DateTime NOWDAY = DateTime.Now;
+        private DateTime  YEARS_MENOS = DateTime.Now.AddYears(-1);
+
+
+
         public VERSA_VTS_VS_GOPC_SP()
         {
 
@@ -69,6 +74,8 @@ namespace OTRA_API_008.Models
             List<VTS_AND_NCQV> LISTAREULTADO = new List<VTS_AND_NCQV>();
             try
             {
+               
+
                 using (SqlConnection CONEECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONEECT.Open();
@@ -77,22 +84,23 @@ namespace OTRA_API_008.Models
 
                         COMANDO.CommandType = CommandType.StoredProcedure;
                         COMANDO.Parameters.Add("@INI_FCH", SqlDbType.DateTime);
-                        COMANDO.Parameters["@INI_FCH"].Value = _FILTRO_CNTRL.ini_fecha;
+                        COMANDO.Parameters["@INI_FCH"].Value ="2020-01-01";// _FILTRO_CNTRL.ini_fecha;
 
 
                         COMANDO.Parameters.Add("@FIN_FCH", SqlDbType.DateTime);
-                        COMANDO.Parameters["@FIN_FCH"].Value =  _FILTRO_CNTRL.fin_fecha;
+                        COMANDO.Parameters["@FIN_FCH"].Value = NOWDAY;// _FILTRO_CNTRL.fin_fecha;
 
-                       
+
+
                         drd = COMANDO.ExecuteReader();
 
-                        ventas_vrs.Columns.Add("NUM_DOCTO", typeof(Int32));
-                        ventas_vrs.Columns.Add("CLAS_PROD", typeof(string));
-                        ventas_vrs.Columns.Add("TIPO_DOCTO", typeof(string));
-                        ventas_vrs.Columns.Add("SKU_PRODUCTO", typeof(string));
-                        ventas_vrs.Columns.Add("NOM_PRODUCTO", typeof(string));
-                        ventas_vrs.Columns.Add("MES", typeof(Int32));
-                        ventas_vrs.Columns.Add("ANIO", typeof(Int32));
+                        //ventas_vrs.Columns.Add("NUM_DOCTO", typeof(Int32));
+                        //ventas_vrs.Columns.Add("CLAS_PROD", typeof(string));
+                        //ventas_vrs.Columns.Add("TIPO_DOCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("SKU_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("NOM_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("MES", typeof(Int32));
+                        //ventas_vrs.Columns.Add("ANIO", typeof(Int32));
                         
                         while (drd.Read())
                         {
@@ -135,7 +143,7 @@ namespace OTRA_API_008.Models
                                     PORTAFOLIO = drd["PORTAFOLIO"].ToString()
                                 };
                             LISTAREULTADO.Add(ROW_OBJT);
-                            ventas_vrs.Rows.Add(ROW_OBJT.NUM_DOCTO, ROW_OBJT.CLAS_PROD, ROW_OBJT.TIPO_DOCTO, ROW_OBJT.SKU_PRODUCTO, ROW_OBJT.NOM_PRODUCTO);///, obje.MES, obje.ANIO);
+                          ///  ventas_vrs.Rows.Add(ROW_OBJT.NUM_DOCTO, ROW_OBJT.CLAS_PROD, ROW_OBJT.TIPO_DOCTO, ROW_OBJT.SKU_PRODUCTO, ROW_OBJT.NOM_PRODUCTO);///, obje.MES, obje.ANIO);
 
 
 

@@ -199,6 +199,8 @@
     <Compile Include="Controllers\BRWSMAINController.cs" />
     <Compile Include="Controllers\FolioTransprtController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PLATAFORMA_EST_UNESController.cs" />
+    <Compile Include="Controllers\PRUEBAJORGEController.cs" />
     <Compile Include="Controllers\ReclamoMailController.cs" />
     <Compile Include="Controllers\RECLAMOSERVICIOController.cs" />
     <Compile Include="Controllers\SenmailCalidadController.cs" />
@@ -217,7 +219,10 @@
     <Compile Include="Models\BRWS_DOCTO.cs" />
     <Compile Include="Models\DocMain_VRS.cs" />
     <Compile Include="Models\Doc_ftrs.cs" />
+    <Compile Include="Models\FECHAS_AUTORIZADAS_RSGD.cs" />
+    <Compile Include="Models\FECHA_AUTORIZADASController.cs" />
     <Compile Include="Models\objt_MailMesage.cs" />
+    <Compile Include="Models\PLATFORMA_UNES.cs" />
     <Compile Include="Models\RECLAMOS_BD_MAIL.cs" />
     <Compile Include="Models\SMT_MAIL.cs" />
     <Compile Include="Models\TB_VRS_VENTAS_VS_GOPC.cs" />
