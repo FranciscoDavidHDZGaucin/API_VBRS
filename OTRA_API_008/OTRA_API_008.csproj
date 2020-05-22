@@ -196,6 +196,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\API_PRESUPUESTO_MENSUALController.cs" />
     <Compile Include="Controllers\BRWSMAINController.cs" />
     <Compile Include="Controllers\FolioTransprtController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -215,6 +216,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\API_PRESUPUESTO_MENSUAL.cs" />
     <Compile Include="Models\BRWS_DOCTO.cs" />
     <Compile Include="Models\DocMain_VRS.cs" />
     <Compile Include="Models\Doc_ftrs.cs" />

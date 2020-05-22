@@ -53,7 +53,7 @@ namespace OTRA_API_008.Models
 
                             VTS_AND_DETALLE ROW_OBJT = new VTS_AND_DETALLE
                             {
-                                NUM_DOCTO = Convert.ToInt32(drd["NUM_DOCTO"]),
+                            NUM_DOCTO = Convert.ToInt32(drd["NUM_DOCTO"]),
                             SKU_PRODUCTO = Convert.ToString(drd["SKU_PRODUCTO"]),
                             NOM_PRODUCTO = Convert.ToString(drd["NOM_PRODUCTO"]),
                             COD_CLIENTE = Convert.ToString(drd["COD_CLIENTE"]),
@@ -69,12 +69,10 @@ namespace OTRA_API_008.Models
                             CMG = Convert.ToDouble(drd["CMG"]),
                             PCTCMG = Convert.ToDouble(drd["PCTCMG"]),
                             COSTO = Convert.ToDouble(drd["COSTO"])
-                        };
-                       
+                            };
+                            LISTAREULTADO.Add(ROW_OBJT);
 
-                        LISTAREULTADO.Add(ROW_OBJT);
-
-                        dtvts.Rows.Add(ROW_OBJT.NUM_DOCTO, ROW_OBJT.SKU_PRODUCTO, ROW_OBJT.NOM_PRODUCTO, ROW_OBJT.COD_CLIENTE, ROW_OBJT.NOM_CLIENTE, ROW_OBJT.FECHA_DOCTO, ROW_OBJT.DIVISION,
+                            dtvts.Rows.Add(ROW_OBJT.NUM_DOCTO, ROW_OBJT.SKU_PRODUCTO, ROW_OBJT.NOM_PRODUCTO, ROW_OBJT.COD_CLIENTE, ROW_OBJT.NOM_CLIENTE, ROW_OBJT.FECHA_DOCTO, ROW_OBJT.DIVISION,
                                 ROW_OBJT.FAMILIA, ROW_OBJT.LINEA, ROW_OBJT.MARCA, ROW_OBJT.PORTAFOLIO, ROW_OBJT.MONTO, ROW_OBJT.UN, ROW_OBJT.CMG, ROW_OBJT.PCTCMG, ROW_OBJT.COSTO);
                         }
                     }
