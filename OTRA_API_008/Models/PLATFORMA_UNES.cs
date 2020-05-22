@@ -30,7 +30,7 @@ namespace OTRA_API_008.Models
                             {
                                 REMISION = Convert.ToInt32(drd["REMISION"]),
                                 ZONA = Convert.ToString(drd["ZONA"]),
-                                FECHA_ALTA = Convert.ToDateTime(drd["FECHA_ALTA"]),
+                                FECHA_ALTA = Convert.ToDateTime(drd["FECHA_ALTA"]).Date.ToString(),
                                 NOMBRE_CLIENTE = Convert.ToString(drd["NOMBRE_CLIENTE"]),
                                 SKU_PRODUCTO = Convert.ToString(drd["SKU_PRODUCTO"]),
                                 NOM_PRODUCTO = Convert.ToString(drd["NOM_PRODUCTO"]),
@@ -93,7 +93,7 @@ namespace OTRA_API_008.Models
 
         public int REMISION { get; set; }
         public string   ZONA { get; set; }
-        public  DateTime  FECHA_ALTA { get; set; }
+        public  string  FECHA_ALTA { get; set; }
         public string NOMBRE_CLIENTE { get; set; }
         public string SKU_PRODUCTO { get; set; }
         public string NOM_PRODUCTO { get; set; }
