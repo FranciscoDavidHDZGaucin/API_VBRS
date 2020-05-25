@@ -201,6 +201,7 @@
     <Compile Include="Controllers\FolioTransprtController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PLATAFORMA_EST_UNESController.cs" />
+    <Compile Include="Controllers\PRESUPUESTO_DIMController.cs" />
     <Compile Include="Controllers\PRESUPUESTO_VS_GASTOSController.cs" />
     <Compile Include="Controllers\PRUEBAJORGEController.cs" />
     <Compile Include="Controllers\ReclamoMailController.cs" />
@@ -227,6 +228,7 @@
     <Compile Include="Models\FECHA_AUTORIZADASController.cs" />
     <Compile Include="Models\objt_MailMesage.cs" />
     <Compile Include="Models\PLATFORMA_UNES.cs" />
+    <Compile Include="Models\PRESUPUESTO_DIM.cs" />
     <Compile Include="Models\PRESUPUESTO_VS_GASTOS.cs" />
     <Compile Include="Models\RECLAMOS_BD_MAIL.cs" />
     <Compile Include="Models\SMT_MAIL.cs" />
@@ -283,6 +285,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
