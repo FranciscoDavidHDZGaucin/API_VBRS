@@ -206,6 +206,7 @@
     <Compile Include="Controllers\PRUEBAJORGEController.cs" />
     <Compile Include="Controllers\ReclamoMailController.cs" />
     <Compile Include="Controllers\RECLAMOSERVICIOController.cs" />
+    <Compile Include="Controllers\REPORTE_PEDIDOSController.cs" />
     <Compile Include="Controllers\SenmailCalidadController.cs" />
     <Compile Include="Controllers\TB_VRS_VTSVSGOPCController.cs" />
     <Compile Include="Controllers\USUARIOController.cs" />
@@ -231,6 +232,7 @@
     <Compile Include="Models\PRESUPUESTO_DIM.cs" />
     <Compile Include="Models\PRESUPUESTO_VS_GASTOS.cs" />
     <Compile Include="Models\RECLAMOS_BD_MAIL.cs" />
+    <Compile Include="Models\REPORTE_PEDIDOS.cs" />
     <Compile Include="Models\SMT_MAIL.cs" />
     <Compile Include="Models\TB_VRS_VENTAS_VS_GOPC.cs" />
     <Compile Include="Models\USUARIO.cs" />
@@ -286,6 +288,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

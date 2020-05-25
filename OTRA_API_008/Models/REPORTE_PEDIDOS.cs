@@ -9,27 +9,26 @@ using System.Data.SqlClient;
 
 namespace OTRA_API_008.Models
 {
-    public class PRESUPUESTO_DIM
+    public class REPORTE_PEDIDOS
     {
 
         private SqlDataReader drd;
 
         public List<DataTable> _RES_TOTALES = null;
 
-        public Newtonsoft.Json.Linq.JArray DIM_PRESU()
+        public Newtonsoft.Json.Linq.JArray REP_PEDIDOS()
         {
 
             DataTable dtvts = new DataTable();
             try
             {
-                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
+                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.154;Initial Catalog=JUPITER;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONECT.Open();
-                    using (SqlCommand COMANDO = new SqlCommand("SELECT * FROM vwPresupuesto_Dim", CONECT))
+                    using (SqlCommand COMANDO = new SqlCommand("SP_REPORTE_PEDIDOS", CONECT))
 
 
                     {
-
                         dtvts.Load(COMANDO.ExecuteReader());
 
 
