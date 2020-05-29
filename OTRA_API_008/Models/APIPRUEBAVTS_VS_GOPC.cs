@@ -41,7 +41,7 @@ namespace OTRA_API_008.Models
 
         public List<DataTable> _RES_TOTALES = null;
 
-        public Newtonsoft.Json.Linq.JArray VTS_COMPARATIVA(DateTime Fini, DateTime Ffin)
+        public Newtonsoft.Json.Linq.JArray VTS_COMPARATIVA()
         {
             DataTable dtvts = new DataTable();
             try

@@ -14,13 +14,12 @@ namespace OTRA_API_008.Controllers
 {
     public class Prueba_DAVIDVTS_VS_GOPCController : ApiController
     {
-        public JArray Get(DateTime ini, DateTime fin)
+        public JArray Get()
         {
             apiPRUEBAVTS_VS_GOPC VTSFECHA = new apiPRUEBAVTS_VS_GOPC();
             JArray result = new JArray();
-            var date1 = new DateTime(2020, 2, 1);
-            var date2 = new DateTime(2020, 2, 17);
-            result = VTSFECHA.VTS_COMPARATIVA(ini, fin);
+            
+            result = VTSFECHA.VTS_COMPARATIVA();
             return result;
         }
     }
