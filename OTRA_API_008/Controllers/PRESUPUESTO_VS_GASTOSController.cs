@@ -17,7 +17,7 @@ namespace OTRA_API_008.Controllers
 
         public Newtonsoft.Json.Linq.JArray Get()
         {
-            PRESUPUESTO_VS_GASTOS PRESUP_GAST = new PRESUPUESTO_VS_GASTOS();
+            apiPRESUPUESTO_VS_GASTOS PRESUP_GAST = new apiPRESUPUESTO_VS_GASTOS();
             JArray result = new JArray();
             result = PRESUP_GAST.PRESUPUESTO_GASTOS();
             return result;

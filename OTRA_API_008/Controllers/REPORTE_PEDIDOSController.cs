@@ -18,7 +18,7 @@ namespace OTRA_API_008.Controllers
 
         public Newtonsoft.Json.Linq.JArray Get()
         {
-            REPORTE_PEDIDOS REPORT_PEDIDOS = new REPORTE_PEDIDOS();
+            apiREPORTE_PEDIDOS REPORT_PEDIDOS = new apiREPORTE_PEDIDOS();
             JArray result = new JArray();
             result = REPORT_PEDIDOS.REP_PEDIDOS();
             return result;

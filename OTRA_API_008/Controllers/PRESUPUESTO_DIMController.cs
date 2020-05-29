@@ -19,7 +19,7 @@ namespace OTRA_API_008.Controllers
 
         public Newtonsoft.Json.Linq.JArray Get()
         {
-            PRESUPUESTO_DIM PRESUP_DIM = new PRESUPUESTO_DIM();
+            apiPRESUPUESTO_DIM PRESUP_DIM = new apiPRESUPUESTO_DIM();
             JArray result = new JArray();
             result = PRESUP_DIM.DIM_PRESU();
             return result;

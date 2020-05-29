@@ -204,6 +204,7 @@
     <Compile Include="Controllers\PRESUPUESTO_DIMController.cs" />
     <Compile Include="Controllers\PRESUPUESTO_VS_GASTOSController.cs" />
     <Compile Include="Controllers\PRUEBAJORGEController.cs" />
+    <Compile Include="Controllers\Prueba_DAVIDVTS_VS_GOPCController.cs" />
     <Compile Include="Controllers\ReclamoMailController.cs" />
     <Compile Include="Controllers\RECLAMOSERVICIOController.cs" />
     <Compile Include="Controllers\REPORTE_PEDIDOSController.cs" />
@@ -221,6 +222,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\apiPRUEBAVTS_VS_GOPC.cs" />
     <Compile Include="Models\API_PRESUPUESTO_MENSUAL.cs" />
     <Compile Include="Models\BRWS_DOCTO.cs" />
     <Compile Include="Models\DocMain_VRS.cs" />
@@ -229,10 +231,10 @@
     <Compile Include="Models\FECHA_AUTORIZADASController.cs" />
     <Compile Include="Models\objt_MailMesage.cs" />
     <Compile Include="Models\PLATFORMA_UNES.cs" />
-    <Compile Include="Models\PRESUPUESTO_DIM.cs" />
-    <Compile Include="Models\PRESUPUESTO_VS_GASTOS.cs" />
+    <Compile Include="Models\apiPRESUPUESTO_DIM.cs" />
+    <Compile Include="Models\apiPRESUPUESTO_VS_GASTOS.cs" />
     <Compile Include="Models\RECLAMOS_BD_MAIL.cs" />
-    <Compile Include="Models\REPORTE_PEDIDOS.cs" />
+    <Compile Include="Models\apiREPORTE_PEDIDOS.cs" />
     <Compile Include="Models\SMT_MAIL.cs" />
     <Compile Include="Models\TB_VRS_VENTAS_VS_GOPC.cs" />
     <Compile Include="Models\USUARIO.cs" />
@@ -289,6 +291,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile9.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

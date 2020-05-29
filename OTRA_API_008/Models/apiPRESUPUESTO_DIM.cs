@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace OTRA_API_008.Models
 {
-    public class PRESUPUESTO_DIM
+    public class apiPRESUPUESTO_DIM
     {
 
         private SqlDataReader drd;
