@@ -84,7 +84,7 @@ namespace OTRA_API_008.Models
 
                         COMANDO.CommandType = CommandType.StoredProcedure;
                         COMANDO.Parameters.Add("@INI_FCH", SqlDbType.DateTime);
-                        COMANDO.Parameters["@INI_FCH"].Value ="2020-01-01";// _FILTRO_CNTRL.ini_fecha;
+                        COMANDO.Parameters["@INI_FCH"].Value ="2020-02-01";// _FILTRO_CNTRL.ini_fecha;
 
 
                         COMANDO.Parameters.Add("@FIN_FCH", SqlDbType.DateTime);
@@ -121,9 +121,9 @@ namespace OTRA_API_008.Models
                                     NOM_AGENTE = drd["NOM_AGENTE"].ToString(),
                                     CANTIDAD = Convert.ToInt32(drd["CANTIDAD"]),
 
-                                    COSTO = Convert.ToString(drd["COSTO"]),
-                                    MONTO = Convert.ToString(drd["MONTO"]),
-                                    CMG = Convert.ToString(drd["CMG"]),
+                                    COSTO = Convert.ToDouble(drd["COSTO"]),
+                                    MONTO = Convert.ToDouble(drd["MONTO"]),
+                                    CMG = Convert.ToDouble(drd["CMG"]),
 
                                    
 
@@ -255,9 +255,9 @@ namespace OTRA_API_008.Models
         public int CCOD_AGENTE { get; set; }
         public string NOM_AGENTE { get; set; }
         public int CANTIDAD { get; set; }
-        public string COSTO { get; set; }
-        public string MONTO { get; set; }
-        public string CMG { get; set; }
+        public double  COSTO { get; set; }
+        public double MONTO { get; set; }
+        public double   CMG { get; set; }
         public int SEM_PROGRAMADA { get; set; }
         public string CLAS_CREDITO { get; set; }
         public DateTime FECHA_DOCTO { get; set; }
