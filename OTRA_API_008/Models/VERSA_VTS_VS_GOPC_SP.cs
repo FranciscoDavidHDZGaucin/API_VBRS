@@ -16,6 +16,8 @@ namespace OTRA_API_008.Models
         private SqlDataReader drd;
         // private SqlDataReader DRD;
 
+        string fech_real = "";
+
         private  DateTime NOWDAY = DateTime.Now;
         private DateTime  YEARS_MENOS = DateTime.Now.AddYears(-1);
 
@@ -104,7 +106,9 @@ namespace OTRA_API_008.Models
                         
                         while (drd.Read())
                         {
-                           
+                            fech_real = Convert.ToDateTime(drd["FECHA_REAL"]).ToString("yyyy-MM-dd");
+
+
                                 VTS_AND_NCQV ROW_OBJT  = new VTS_AND_NCQV
                                 {
 
@@ -133,6 +137,7 @@ namespace OTRA_API_008.Models
                                     CLAS_CREDITO = drd["CLAS_CREDITO"].ToString(),
 
                                     FECHA_DOCTO = Convert.ToDateTime(drd["FECHA_DOCTO"]),
+                                    FECHA_REAL = fech_real,
                                     UN = drd["UN"].ToString(),
                                     REMISION = drd["REMISION"].ToString(),
                                     CLASIFICACION = drd["CLASIFICACION"].ToString(),
@@ -271,6 +276,7 @@ namespace OTRA_API_008.Models
         public string MARCA { get; set; }
         public string PORTAFOLIO { get; set; }
         public string PRESENTACION { get; set; }
+        public string FECHA_REAL { get; set; }
     }
 
    
