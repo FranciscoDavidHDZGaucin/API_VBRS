@@ -133,6 +133,7 @@ namespace OTRA_API_008.Models
                                     CLAS_CREDITO = drd["CLAS_CREDITO"].ToString(),
 
                                     FECHA_DOCTO = Convert.ToDateTime(drd["FECHA_DOCTO"]),
+                                    FECHA_REAL = Convert.ToDateTime(drd["FECHA_REAL"]),
                                     UN = drd["UN"].ToString(),
                                     REMISION = drd["REMISION"].ToString(),
                                     CLASIFICACION = drd["CLASIFICACION"].ToString(),
@@ -271,6 +272,7 @@ namespace OTRA_API_008.Models
         public string MARCA { get; set; }
         public string PORTAFOLIO { get; set; }
         public string PRESENTACION { get; set; }
+        public DateTime FECHA_REAL { get; set; }
     }
 
    
