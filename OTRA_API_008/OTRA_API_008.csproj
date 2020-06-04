@@ -224,6 +224,7 @@
     <Compile Include="Controllers\VTS_VS_GOPCController.cs" />
     <Compile Include="Controllers\vwCAT_PRODUCTOSController.cs" />
     <Compile Include="Controllers\VWINVENTARIOController.cs" />
+    <Compile Include="Controllers\vw_CAT_CLIENTESController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -253,6 +254,7 @@
     <Compile Include="Models\VTS_TOTALES.cs" />
     <Compile Include="Models\VTS_TOTLS_GOPC.cs" />
     <Compile Include="Models\VTS_VS_GOPC.cs" />
+    <Compile Include="Models\vwCAT_CLIENTES.cs" />
     <Compile Include="Models\vwCAT_PRODUCTOS.cs" />
     <Compile Include="Models\vw_INVENTARIO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
