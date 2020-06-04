@@ -212,6 +212,7 @@
     <Compile Include="Controllers\RECLAMOSERVICIOController.cs" />
     <Compile Include="Controllers\REPORTE_PEDIDOSController.cs" />
     <Compile Include="Controllers\SenmailCalidadController.cs" />
+    <Compile Include="Controllers\SP_CICLO_PEDIDOS_VERSA_BIController.cs" />
     <Compile Include="Controllers\TB_VRS_VTSVSGOPCController.cs" />
     <Compile Include="Controllers\USUARIOController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -245,6 +246,7 @@
     <Compile Include="Models\RECLAMOS_BD_MAIL.cs" />
     <Compile Include="Models\apiREPORTE_PEDIDOS.cs" />
     <Compile Include="Models\SMT_MAIL.cs" />
+    <Compile Include="Models\SP_CICLO_PEDIDOS_VERSA_BI.cs" />
     <Compile Include="Models\TB_VRS_VENTAS_VS_GOPC.cs" />
     <Compile Include="Models\USUARIO.cs" />
     <Compile Include="Models\VERSA_VTS_VS_GOPC_SP.cs" />
