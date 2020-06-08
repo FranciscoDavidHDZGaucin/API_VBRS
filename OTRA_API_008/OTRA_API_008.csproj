@@ -214,6 +214,7 @@
     <Compile Include="Controllers\RECLAMOSERVICIOController.cs" />
     <Compile Include="Controllers\REPORTE_PEDIDOSController.cs" />
     <Compile Include="Controllers\SenmailCalidadController.cs" />
+    <Compile Include="Controllers\SP_CICLO_PEDIDOS_VERSA_BIController.cs" />
     <Compile Include="Controllers\TB_VRS_VTSVSGOPCController.cs" />
     <Compile Include="Controllers\USUARIOController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -224,6 +225,10 @@
     <Compile Include="Controllers\VTS_TOTALESController.cs" />
     <Compile Include="Controllers\VTS_TOTLS_GOPCController.cs" />
     <Compile Include="Controllers\VTS_VS_GOPCController.cs" />
+    <Compile Include="Controllers\VWCARTERAGRUPOSController.cs" />
+    <Compile Include="Controllers\vwCAT_PRODUCTOSController.cs" />
+    <Compile Include="Controllers\VWINVENTARIOController.cs" />
+    <Compile Include="Controllers\vw_CAT_CLIENTESController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -246,6 +251,7 @@
     <Compile Include="Models\RECLAMOS_BD_MAIL.cs" />
     <Compile Include="Models\apiREPORTE_PEDIDOS.cs" />
     <Compile Include="Models\SMT_MAIL.cs" />
+    <Compile Include="Models\SP_CICLO_PEDIDOS_VERSA_BI.cs" />
     <Compile Include="Models\TB_VRS_VENTAS_VS_GOPC.cs" />
     <Compile Include="Models\USUARIO.cs" />
     <Compile Include="Models\VERSA_VTS_VS_GOPC_SP.cs" />
@@ -255,6 +261,10 @@
     <Compile Include="Models\VTS_TOTALES.cs" />
     <Compile Include="Models\VTS_TOTLS_GOPC.cs" />
     <Compile Include="Models\VTS_VS_GOPC.cs" />
+    <Compile Include="Models\vwCAT_CLIENTES.cs" />
+    <Compile Include="Models\vwCAT_PRODUCTOS.cs" />
+    <Compile Include="Models\vw_CARTERA_GRUPOS.cs" />
+    <Compile Include="Models\vw_INVENTARIO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
