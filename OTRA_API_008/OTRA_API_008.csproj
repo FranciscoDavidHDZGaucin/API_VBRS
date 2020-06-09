@@ -218,6 +218,7 @@
     <Compile Include="Controllers\TB_VRS_VTSVSGOPCController.cs" />
     <Compile Include="Controllers\USUARIOController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\VRSVENTAS_YNC_RSGD_FECHAController.cs" />
     <Compile Include="Controllers\VRSVENTAS_YNC__RSGDController.cs" />
     <Compile Include="Controllers\VTS_DETALLEController.cs" />
     <Compile Include="Controllers\VTS_FECHAController.cs" />
@@ -255,6 +256,7 @@
     <Compile Include="Models\TB_VRS_VENTAS_VS_GOPC.cs" />
     <Compile Include="Models\USUARIO.cs" />
     <Compile Include="Models\VERSA_VTS_VS_GOPC_SP.cs" />
+    <Compile Include="Models\VERSA_VTS_VS_GOPC_SP_FECHA.cs" />
     <Compile Include="Models\VRS_VTS_FECHA.cs" />
     <Compile Include="Models\VRS_VTS_NOTA_CRED.cs" />
     <Compile Include="Models\VTS_DETALLE.cs" />
@@ -309,6 +311,8 @@
     <None Include="Properties\PublishProfiles\FolderProfile12.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile13.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile14.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile15.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile16.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
