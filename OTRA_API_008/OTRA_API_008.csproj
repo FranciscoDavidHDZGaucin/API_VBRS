@@ -227,9 +227,9 @@
     <Compile Include="Controllers\VTS_TOTLS_GOPCController.cs" />
     <Compile Include="Controllers\VTS_VS_GOPCController.cs" />
     <Compile Include="Controllers\VWCARTERAGRUPOSController.cs" />
-    <Compile Include="Controllers\vwCAT_PRODUCTOSController.cs" />
+    <Compile Include="Controllers\apiCAT_PRODUCTOSController.cs" />
     <Compile Include="Controllers\VWINVENTARIOController.cs" />
-    <Compile Include="Controllers\vw_CAT_CLIENTESController.cs" />
+    <Compile Include="Controllers\apiCAT_CLIENTESController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -313,6 +313,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile14.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile15.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile16.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile17.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
