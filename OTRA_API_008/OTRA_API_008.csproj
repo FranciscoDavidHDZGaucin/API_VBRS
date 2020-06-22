@@ -200,6 +200,7 @@
     <Compile Include="Controllers\apiCAT_ALMACENESController.cs" />
     <Compile Include="Controllers\apiOBJETIVO_AGENTESController.cs" />
     <Compile Include="Controllers\apiREPORTE_PEDIDOS_ENTREGAController.cs" />
+    <Compile Include="Controllers\apiREPORTE_PEDIDOS_FOLIOSController.cs" />
     <Compile Include="Controllers\API_PRESUPUESTO_MENSUALController.cs" />
     <Compile Include="Controllers\api_VTS_NOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\BRWSMAINController.cs" />
@@ -238,6 +239,7 @@
     <Compile Include="Models\apiOBJETIVO_AGENTES.cs" />
     <Compile Include="Models\apiPRUEBAVTS_VS_GOPC.cs" />
     <Compile Include="Models\apiREPORTE_PEDIDOS_ENTREGA.cs" />
+    <Compile Include="Models\apiREPORTE_PEDIDOS_FOLIOS.cs" />
     <Compile Include="Models\apiVTS_NOTAS_DE_CREDITO.cs" />
     <Compile Include="Models\API_PRESUPUESTO_MENSUAL.cs" />
     <Compile Include="Models\BRWS_DOCTO.cs" />
@@ -314,6 +316,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile15.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile16.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile17.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile18.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
