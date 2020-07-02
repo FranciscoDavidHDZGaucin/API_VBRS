@@ -9,18 +9,22 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Data;
 using System.Data.SqlClient;
+
 namespace OTRA_API_008.Controllers
 {
-    public class CAT_CLIENTESController : ApiController
+    public class apiCAT_PRODUCTOSController : ApiController
     {
+
         public Newtonsoft.Json.Linq.JArray Get()
         {
-            vwCAT_CLIENTES CLIENTES = new vwCAT_CLIENTES();
+            vwCAT_PRODUCTOS PRODUCTOS = new vwCAT_PRODUCTOS();
             JArray result = new JArray();
-            result = CLIENTES.CAT_CLIENTE();
+            result = PRODUCTOS.CAT_PRODUCTOS();
             return result;
         }
 
 
+
     }
+
 }

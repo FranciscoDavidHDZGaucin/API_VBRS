@@ -198,6 +198,9 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\apiCAT_AGENTESController.cs" />
     <Compile Include="Controllers\apiCAT_ALMACENESController.cs" />
+    <Compile Include="Controllers\apiOBJETIVO_AGENTESController.cs" />
+    <Compile Include="Controllers\apiREPORTE_PEDIDOS_ENTREGAController.cs" />
+    <Compile Include="Controllers\apiREPORTE_PEDIDOS_FOLIOSController.cs" />
     <Compile Include="Controllers\API_PRESUPUESTO_MENSUALController.cs" />
     <Compile Include="Controllers\api_VTS_NOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\BRWSMAINController.cs" />
@@ -216,6 +219,7 @@
     <Compile Include="Controllers\TB_VRS_VTSVSGOPCController.cs" />
     <Compile Include="Controllers\USUARIOController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\VRSVENTAS_YNC_RSGD_FECHAController.cs" />
     <Compile Include="Controllers\VRSVENTAS_YNC__RSGDController.cs" />
     <Compile Include="Controllers\VTS_DETALLEController.cs" />
     <Compile Include="Controllers\VTS_FECHAController.cs" />
@@ -224,15 +228,18 @@
     <Compile Include="Controllers\VTS_TOTLS_GOPCController.cs" />
     <Compile Include="Controllers\VTS_VS_GOPCController.cs" />
     <Compile Include="Controllers\VWCARTERAGRUPOSController.cs" />
-    <Compile Include="Controllers\vwCAT_PRODUCTOSController.cs" />
+    <Compile Include="Controllers\apiCAT_PRODUCTOSController.cs" />
     <Compile Include="Controllers\VWINVENTARIOController.cs" />
-    <Compile Include="Controllers\vw_CAT_CLIENTESController.cs" />
+    <Compile Include="Controllers\apiCAT_CLIENTESController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\apiCAT_AGENTES.cs" />
     <Compile Include="Models\apiCAT_ALMACENES.cs" />
+    <Compile Include="Models\apiOBJETIVO_AGENTES.cs" />
     <Compile Include="Models\apiPRUEBAVTS_VS_GOPC.cs" />
+    <Compile Include="Models\apiREPORTE_PEDIDOS_ENTREGA.cs" />
+    <Compile Include="Models\apiREPORTE_PEDIDOS_FOLIOS.cs" />
     <Compile Include="Models\apiVTS_NOTAS_DE_CREDITO.cs" />
     <Compile Include="Models\API_PRESUPUESTO_MENSUAL.cs" />
     <Compile Include="Models\BRWS_DOCTO.cs" />
@@ -251,6 +258,7 @@
     <Compile Include="Models\TB_VRS_VENTAS_VS_GOPC.cs" />
     <Compile Include="Models\USUARIO.cs" />
     <Compile Include="Models\VERSA_VTS_VS_GOPC_SP.cs" />
+    <Compile Include="Models\VERSA_VTS_VS_GOPC_SP_FECHA.cs" />
     <Compile Include="Models\VRS_VTS_FECHA.cs" />
     <Compile Include="Models\VRS_VTS_NOTA_CRED.cs" />
     <Compile Include="Models\VTS_DETALLE.cs" />
@@ -304,6 +312,11 @@
     <None Include="Properties\PublishProfiles\FolderProfile11.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile12.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile13.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile14.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile15.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile16.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile17.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile18.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
