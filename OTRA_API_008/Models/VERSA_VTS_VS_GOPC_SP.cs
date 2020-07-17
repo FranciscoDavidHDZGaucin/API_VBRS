@@ -182,6 +182,574 @@ namespace OTRA_API_008.Models
 
 
         }
+
+        public Newtonsoft.Json.Linq.JArray CALL_SP_VENTASVRSNC_2019()
+        {
+            DataTable ventas_vrs = new DataTable();
+            List<VTS_AND_NCQV> LISTAREULTADO = new List<VTS_AND_NCQV>();
+            try
+            {
+
+
+                using (SqlConnection CONEECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
+                {
+                    CONEECT.Open();
+                    using (SqlCommand COMANDO = new SqlCommand("SP_VRS_VENTAS_AND_NCQV", CONEECT))
+                    {
+
+                        COMANDO.CommandType = CommandType.StoredProcedure;
+                        COMANDO.Parameters.Add("@INI_FCH", SqlDbType.DateTime);
+                        COMANDO.Parameters["@INI_FCH"].Value = "2019-01-01";// _FILTRO_CNTRL.ini_fecha;
+
+
+                        COMANDO.Parameters.Add("@FIN_FCH", SqlDbType.DateTime);
+                        COMANDO.Parameters["@FIN_FCH"].Value = "2019-12-31";// _FILTRO_CNTRL.fin_fecha;
+
+
+
+                        drd = COMANDO.ExecuteReader();
+
+                        //ventas_vrs.Columns.Add("NUM_DOCTO", typeof(Int32));
+                        //ventas_vrs.Columns.Add("CLAS_PROD", typeof(string));
+                        //ventas_vrs.Columns.Add("TIPO_DOCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("SKU_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("NOM_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("MES", typeof(Int32));
+                        //ventas_vrs.Columns.Add("ANIO", typeof(Int32));
+
+                        while (drd.Read())
+                        {
+                            fech_real = Convert.ToDateTime(drd["FECHA_REAL"]).ToString("yyyy-MM-dd");
+
+
+                            VTS_AND_NCQV ROW_OBJT = new VTS_AND_NCQV
+                            {
+
+                                NUM_DOCTO = Convert.ToInt32(drd["NUM_DOCTO"]),
+                                CLAS_PROD = Convert.ToString(drd["CLAS_PROD"]),
+                                TIPO_DOCTO = Convert.ToString(drd["TIPO_DOCTO"]),
+                                SKU_PRODUCTO = Convert.ToString(drd["SKU_PRODUCTO"]),
+                                NOM_PRODUCTO = Convert.ToString(drd["NOM_PRODUCTO"]),
+                                MES = Convert.ToInt32(drd["MES"]),
+                                ANIO = Convert.ToInt32(drd["ANIO"]),
+                                COD_CLIENTE = drd["COD_CLIENTE"].ToString(),
+                                NOM_CLIENTE = drd["NOM_CLIENTE"].ToString(),
+                                CCOD_AGENTE = Convert.ToInt32(drd["CCOD_AGENTE"]),
+                                NOM_AGENTE = drd["NOM_AGENTE"].ToString(),
+                                CANTIDAD = Convert.ToInt32(drd["CANTIDAD"]),
+
+                                COSTO = Convert.ToDouble(drd["COSTO"]),
+                                MONTO = Convert.ToDouble(drd["MONTO"]),
+                                CMG = Convert.ToDouble(drd["CMG"]),
+
+
+
+
+                                SEM_PROGRAMADA = Convert.ToInt32(drd["SEM_PROGRAMADA"]),
+
+                                CLAS_CREDITO = drd["CLAS_CREDITO"].ToString(),
+
+                                FECHA_DOCTO = Convert.ToDateTime(drd["FECHA_DOCTO"]),
+                                FECHA_REAL = fech_real,
+                                UN = drd["UN"].ToString(),
+                                REMISION = drd["REMISION"].ToString(),
+                                CLASIFICACION = drd["CLASIFICACION"].ToString(),
+                                DIVISION = drd["DIVISION"].ToString(),
+                                FAMILIA = drd["FAMILIA"].ToString(),
+                                LINEA = drd["LINEA"].ToString(),
+                                MARCA = drd["MARCA"].ToString(),
+                                PORTAFOLIO = drd["PORTAFOLIO"].ToString()
+                            };
+                            LISTAREULTADO.Add(ROW_OBJT);
+                            ///  ventas_vrs.Rows.Add(ROW_OBJT.NUM_DOCTO, ROW_OBJT.CLAS_PROD, ROW_OBJT.TIPO_DOCTO, ROW_OBJT.SKU_PRODUCTO, ROW_OBJT.NOM_PRODUCTO);///, obje.MES, obje.ANIO);
+
+
+
+                        }
+
+
+
+
+
+
+                    }
+
+
+
+                }
+
+
+            }
+            catch (Exception e)
+            {
+                ventas_vrs = new DataTable();
+            }
+            var jsonresult = JsonConvert.SerializeObject(LISTAREULTADO);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
+
+            return Areglo_JSON;
+
+
+
+
+
+
+        }
+
+       
+
+        public Newtonsoft.Json.Linq.JArray CALL_SP_VENTASVRSNC_2015()
+        {
+            DataTable ventas_vrs = new DataTable();
+            List<VTS_AND_NCQV> LISTAREULTADO = new List<VTS_AND_NCQV>();
+            try
+            {
+
+
+                using (SqlConnection CONEECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
+                {
+                    CONEECT.Open();
+                    using (SqlCommand COMANDO = new SqlCommand("SP_VRS_VENTAS_AND_NCQV", CONEECT))
+                    {
+
+                        COMANDO.CommandType = CommandType.StoredProcedure;
+                        COMANDO.Parameters.Add("@INI_FCH", SqlDbType.DateTime);
+                        COMANDO.Parameters["@INI_FCH"].Value = "2015-01-01";// _FILTRO_CNTRL.ini_fecha;
+
+
+                        COMANDO.Parameters.Add("@FIN_FCH", SqlDbType.DateTime);
+                        COMANDO.Parameters["@FIN_FCH"].Value = "2015-12-31";// _FILTRO_CNTRL.fin_fecha;
+
+
+
+                        drd = COMANDO.ExecuteReader();
+
+                        //ventas_vrs.Columns.Add("NUM_DOCTO", typeof(Int32));
+                        //ventas_vrs.Columns.Add("CLAS_PROD", typeof(string));
+                        //ventas_vrs.Columns.Add("TIPO_DOCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("SKU_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("NOM_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("MES", typeof(Int32));
+                        //ventas_vrs.Columns.Add("ANIO", typeof(Int32));
+
+                        while (drd.Read())
+                        {
+                            fech_real = Convert.ToDateTime(drd["FECHA_REAL"]).ToString("yyyy-MM-dd");
+
+
+                            VTS_AND_NCQV ROW_OBJT = new VTS_AND_NCQV
+                            {
+
+                                NUM_DOCTO = Convert.ToInt32(drd["NUM_DOCTO"]),
+                                CLAS_PROD = Convert.ToString(drd["CLAS_PROD"]),
+                                TIPO_DOCTO = Convert.ToString(drd["TIPO_DOCTO"]),
+                                SKU_PRODUCTO = Convert.ToString(drd["SKU_PRODUCTO"]),
+                                NOM_PRODUCTO = Convert.ToString(drd["NOM_PRODUCTO"]),
+                                MES = Convert.ToInt32(drd["MES"]),
+                                ANIO = Convert.ToInt32(drd["ANIO"]),
+                                COD_CLIENTE = drd["COD_CLIENTE"].ToString(),
+                                NOM_CLIENTE = drd["NOM_CLIENTE"].ToString(),
+                                CCOD_AGENTE = Convert.ToInt32(drd["CCOD_AGENTE"]),
+                                NOM_AGENTE = drd["NOM_AGENTE"].ToString(),
+                                CANTIDAD = Convert.ToInt32(drd["CANTIDAD"]),
+
+                                COSTO = Convert.ToDouble(drd["COSTO"]),
+                                MONTO = Convert.ToDouble(drd["MONTO"]),
+                                CMG = Convert.ToDouble(drd["CMG"]),
+
+
+
+
+                                SEM_PROGRAMADA = Convert.ToInt32(drd["SEM_PROGRAMADA"]),
+
+                                CLAS_CREDITO = drd["CLAS_CREDITO"].ToString(),
+
+                                FECHA_DOCTO = Convert.ToDateTime(drd["FECHA_DOCTO"]),
+                                FECHA_REAL = fech_real,
+                                UN = drd["UN"].ToString(),
+                                REMISION = drd["REMISION"].ToString(),
+                                CLASIFICACION = drd["CLASIFICACION"].ToString(),
+                                DIVISION = drd["DIVISION"].ToString(),
+                                FAMILIA = drd["FAMILIA"].ToString(),
+                                LINEA = drd["LINEA"].ToString(),
+                                MARCA = drd["MARCA"].ToString(),
+                                PORTAFOLIO = drd["PORTAFOLIO"].ToString()
+                            };
+                            LISTAREULTADO.Add(ROW_OBJT);
+                            ///  ventas_vrs.Rows.Add(ROW_OBJT.NUM_DOCTO, ROW_OBJT.CLAS_PROD, ROW_OBJT.TIPO_DOCTO, ROW_OBJT.SKU_PRODUCTO, ROW_OBJT.NOM_PRODUCTO);///, obje.MES, obje.ANIO);
+
+
+
+                        }
+
+
+
+
+
+
+                    }
+
+
+
+                }
+
+
+            }
+            catch (Exception e)
+            {
+                ventas_vrs = new DataTable();
+            }
+            var jsonresult = JsonConvert.SerializeObject(LISTAREULTADO);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
+
+            return Areglo_JSON;
+
+
+
+
+
+
+        }
+
+        public Newtonsoft.Json.Linq.JArray CALL_SP_VENTASVRSNC_2016()
+        {
+            DataTable ventas_vrs = new DataTable();
+            List<VTS_AND_NCQV> LISTAREULTADO = new List<VTS_AND_NCQV>();
+            try
+            {
+
+
+                using (SqlConnection CONEECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
+                {
+                    CONEECT.Open();
+                    using (SqlCommand COMANDO = new SqlCommand("SP_VRS_VENTAS_AND_NCQV", CONEECT))
+                    {
+
+                        COMANDO.CommandType = CommandType.StoredProcedure;
+                        COMANDO.Parameters.Add("@INI_FCH", SqlDbType.DateTime);
+                        COMANDO.Parameters["@INI_FCH"].Value = "2016-01-01";// _FILTRO_CNTRL.ini_fecha;
+
+
+                        COMANDO.Parameters.Add("@FIN_FCH", SqlDbType.DateTime);
+                        COMANDO.Parameters["@FIN_FCH"].Value = "2016-12-31";// _FILTRO_CNTRL.fin_fecha;
+
+
+
+                        drd = COMANDO.ExecuteReader();
+
+                        //ventas_vrs.Columns.Add("NUM_DOCTO", typeof(Int32));
+                        //ventas_vrs.Columns.Add("CLAS_PROD", typeof(string));
+                        //ventas_vrs.Columns.Add("TIPO_DOCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("SKU_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("NOM_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("MES", typeof(Int32));
+                        //ventas_vrs.Columns.Add("ANIO", typeof(Int32));
+
+                        while (drd.Read())
+                        {
+                            fech_real = Convert.ToDateTime(drd["FECHA_REAL"]).ToString("yyyy-MM-dd");
+
+
+                            VTS_AND_NCQV ROW_OBJT = new VTS_AND_NCQV
+                            {
+
+                                NUM_DOCTO = Convert.ToInt32(drd["NUM_DOCTO"]),
+                                CLAS_PROD = Convert.ToString(drd["CLAS_PROD"]),
+                                TIPO_DOCTO = Convert.ToString(drd["TIPO_DOCTO"]),
+                                SKU_PRODUCTO = Convert.ToString(drd["SKU_PRODUCTO"]),
+                                NOM_PRODUCTO = Convert.ToString(drd["NOM_PRODUCTO"]),
+                                MES = Convert.ToInt32(drd["MES"]),
+                                ANIO = Convert.ToInt32(drd["ANIO"]),
+                                COD_CLIENTE = drd["COD_CLIENTE"].ToString(),
+                                NOM_CLIENTE = drd["NOM_CLIENTE"].ToString(),
+                                CCOD_AGENTE = Convert.ToInt32(drd["CCOD_AGENTE"]),
+                                NOM_AGENTE = drd["NOM_AGENTE"].ToString(),
+                                CANTIDAD = Convert.ToInt32(drd["CANTIDAD"]),
+
+                                COSTO = Convert.ToDouble(drd["COSTO"]),
+                                MONTO = Convert.ToDouble(drd["MONTO"]),
+                                CMG = Convert.ToDouble(drd["CMG"]),
+
+
+
+
+                                SEM_PROGRAMADA = Convert.ToInt32(drd["SEM_PROGRAMADA"]),
+
+                                CLAS_CREDITO = drd["CLAS_CREDITO"].ToString(),
+
+                                FECHA_DOCTO = Convert.ToDateTime(drd["FECHA_DOCTO"]),
+                                FECHA_REAL = fech_real,
+                                UN = drd["UN"].ToString(),
+                                REMISION = drd["REMISION"].ToString(),
+                                CLASIFICACION = drd["CLASIFICACION"].ToString(),
+                                DIVISION = drd["DIVISION"].ToString(),
+                                FAMILIA = drd["FAMILIA"].ToString(),
+                                LINEA = drd["LINEA"].ToString(),
+                                MARCA = drd["MARCA"].ToString(),
+                                PORTAFOLIO = drd["PORTAFOLIO"].ToString()
+                            };
+                            LISTAREULTADO.Add(ROW_OBJT);
+                            ///  ventas_vrs.Rows.Add(ROW_OBJT.NUM_DOCTO, ROW_OBJT.CLAS_PROD, ROW_OBJT.TIPO_DOCTO, ROW_OBJT.SKU_PRODUCTO, ROW_OBJT.NOM_PRODUCTO);///, obje.MES, obje.ANIO);
+
+
+
+                        }
+
+
+
+
+
+
+                    }
+
+
+
+                }
+
+
+            }
+            catch (Exception e)
+            {
+                ventas_vrs = new DataTable();
+            }
+            var jsonresult = JsonConvert.SerializeObject(LISTAREULTADO);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
+
+            return Areglo_JSON;
+
+
+
+
+
+
+        }
+
+        public Newtonsoft.Json.Linq.JArray CALL_SP_VENTASVRSNC_2017()
+        {
+            DataTable ventas_vrs = new DataTable();
+            List<VTS_AND_NCQV> LISTAREULTADO = new List<VTS_AND_NCQV>();
+            try
+            {
+
+
+                using (SqlConnection CONEECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
+                {
+                    CONEECT.Open();
+                    using (SqlCommand COMANDO = new SqlCommand("SP_VRS_VENTAS_AND_NCQV", CONEECT))
+                    {
+
+                        COMANDO.CommandType = CommandType.StoredProcedure;
+                        COMANDO.Parameters.Add("@INI_FCH", SqlDbType.DateTime);
+                        COMANDO.Parameters["@INI_FCH"].Value = "2017-01-01";// _FILTRO_CNTRL.ini_fecha;
+
+
+                        COMANDO.Parameters.Add("@FIN_FCH", SqlDbType.DateTime);
+                        COMANDO.Parameters["@FIN_FCH"].Value = "2017-12-31";// _FILTRO_CNTRL.fin_fecha;
+
+
+
+                        drd = COMANDO.ExecuteReader();
+
+                        //ventas_vrs.Columns.Add("NUM_DOCTO", typeof(Int32));
+                        //ventas_vrs.Columns.Add("CLAS_PROD", typeof(string));
+                        //ventas_vrs.Columns.Add("TIPO_DOCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("SKU_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("NOM_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("MES", typeof(Int32));
+                        //ventas_vrs.Columns.Add("ANIO", typeof(Int32));
+
+                        while (drd.Read())
+                        {
+                            fech_real = Convert.ToDateTime(drd["FECHA_REAL"]).ToString("yyyy-MM-dd");
+
+
+                            VTS_AND_NCQV ROW_OBJT = new VTS_AND_NCQV
+                            {
+
+                                NUM_DOCTO = Convert.ToInt32(drd["NUM_DOCTO"]),
+                                CLAS_PROD = Convert.ToString(drd["CLAS_PROD"]),
+                                TIPO_DOCTO = Convert.ToString(drd["TIPO_DOCTO"]),
+                                SKU_PRODUCTO = Convert.ToString(drd["SKU_PRODUCTO"]),
+                                NOM_PRODUCTO = Convert.ToString(drd["NOM_PRODUCTO"]),
+                                MES = Convert.ToInt32(drd["MES"]),
+                                ANIO = Convert.ToInt32(drd["ANIO"]),
+                                COD_CLIENTE = drd["COD_CLIENTE"].ToString(),
+                                NOM_CLIENTE = drd["NOM_CLIENTE"].ToString(),
+                                CCOD_AGENTE = Convert.ToInt32(drd["CCOD_AGENTE"]),
+                                NOM_AGENTE = drd["NOM_AGENTE"].ToString(),
+                                CANTIDAD = Convert.ToInt32(drd["CANTIDAD"]),
+
+                                COSTO = Convert.ToDouble(drd["COSTO"]),
+                                MONTO = Convert.ToDouble(drd["MONTO"]),
+                                CMG = Convert.ToDouble(drd["CMG"]),
+
+
+
+
+                                SEM_PROGRAMADA = Convert.ToInt32(drd["SEM_PROGRAMADA"]),
+
+                                CLAS_CREDITO = drd["CLAS_CREDITO"].ToString(),
+
+                                FECHA_DOCTO = Convert.ToDateTime(drd["FECHA_DOCTO"]),
+                                FECHA_REAL = fech_real,
+                                UN = drd["UN"].ToString(),
+                                REMISION = drd["REMISION"].ToString(),
+                                CLASIFICACION = drd["CLASIFICACION"].ToString(),
+                                DIVISION = drd["DIVISION"].ToString(),
+                                FAMILIA = drd["FAMILIA"].ToString(),
+                                LINEA = drd["LINEA"].ToString(),
+                                MARCA = drd["MARCA"].ToString(),
+                                PORTAFOLIO = drd["PORTAFOLIO"].ToString()
+                            };
+                            LISTAREULTADO.Add(ROW_OBJT);
+                            ///  ventas_vrs.Rows.Add(ROW_OBJT.NUM_DOCTO, ROW_OBJT.CLAS_PROD, ROW_OBJT.TIPO_DOCTO, ROW_OBJT.SKU_PRODUCTO, ROW_OBJT.NOM_PRODUCTO);///, obje.MES, obje.ANIO);
+
+
+
+                        }
+
+
+
+
+
+
+                    }
+
+
+
+                }
+
+
+            }
+            catch (Exception e)
+            {
+                ventas_vrs = new DataTable();
+            }
+            var jsonresult = JsonConvert.SerializeObject(LISTAREULTADO);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
+
+            return Areglo_JSON;
+
+
+
+
+
+
+        }
+
+        public Newtonsoft.Json.Linq.JArray CALL_SP_VENTASVRSNC_2018()
+        {
+            DataTable ventas_vrs = new DataTable();
+            List<VTS_AND_NCQV> LISTAREULTADO = new List<VTS_AND_NCQV>();
+            try
+            {
+
+
+                using (SqlConnection CONEECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
+                {
+                    CONEECT.Open();
+                    using (SqlCommand COMANDO = new SqlCommand("SP_VRS_VENTAS_AND_NCQV", CONEECT))
+                    {
+
+                        COMANDO.CommandType = CommandType.StoredProcedure;
+                        COMANDO.Parameters.Add("@INI_FCH", SqlDbType.DateTime);
+                        COMANDO.Parameters["@INI_FCH"].Value = "2018-01-01";// _FILTRO_CNTRL.ini_fecha;
+
+
+                        COMANDO.Parameters.Add("@FIN_FCH", SqlDbType.DateTime);
+                        COMANDO.Parameters["@FIN_FCH"].Value = "2018-12-31";// _FILTRO_CNTRL.fin_fecha;
+
+
+
+                        drd = COMANDO.ExecuteReader();
+
+                        //ventas_vrs.Columns.Add("NUM_DOCTO", typeof(Int32));
+                        //ventas_vrs.Columns.Add("CLAS_PROD", typeof(string));
+                        //ventas_vrs.Columns.Add("TIPO_DOCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("SKU_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("NOM_PRODUCTO", typeof(string));
+                        //ventas_vrs.Columns.Add("MES", typeof(Int32));
+                        //ventas_vrs.Columns.Add("ANIO", typeof(Int32));
+
+                        while (drd.Read())
+                        {
+                            fech_real = Convert.ToDateTime(drd["FECHA_REAL"]).ToString("yyyy-MM-dd");
+
+
+                            VTS_AND_NCQV ROW_OBJT = new VTS_AND_NCQV
+                            {
+
+                                NUM_DOCTO = Convert.ToInt32(drd["NUM_DOCTO"]),
+                                CLAS_PROD = Convert.ToString(drd["CLAS_PROD"]),
+                                TIPO_DOCTO = Convert.ToString(drd["TIPO_DOCTO"]),
+                                SKU_PRODUCTO = Convert.ToString(drd["SKU_PRODUCTO"]),
+                                NOM_PRODUCTO = Convert.ToString(drd["NOM_PRODUCTO"]),
+                                MES = Convert.ToInt32(drd["MES"]),
+                                ANIO = Convert.ToInt32(drd["ANIO"]),
+                                COD_CLIENTE = drd["COD_CLIENTE"].ToString(),
+                                NOM_CLIENTE = drd["NOM_CLIENTE"].ToString(),
+                                CCOD_AGENTE = Convert.ToInt32(drd["CCOD_AGENTE"]),
+                                NOM_AGENTE = drd["NOM_AGENTE"].ToString(),
+                                CANTIDAD = Convert.ToInt32(drd["CANTIDAD"]),
+
+                                COSTO = Convert.ToDouble(drd["COSTO"]),
+                                MONTO = Convert.ToDouble(drd["MONTO"]),
+                                CMG = Convert.ToDouble(drd["CMG"]),
+
+
+
+
+                                SEM_PROGRAMADA = Convert.ToInt32(drd["SEM_PROGRAMADA"]),
+
+                                CLAS_CREDITO = drd["CLAS_CREDITO"].ToString(),
+
+                                FECHA_DOCTO = Convert.ToDateTime(drd["FECHA_DOCTO"]),
+                                FECHA_REAL = fech_real,
+                                UN = drd["UN"].ToString(),
+                                REMISION = drd["REMISION"].ToString(),
+                                CLASIFICACION = drd["CLASIFICACION"].ToString(),
+                                DIVISION = drd["DIVISION"].ToString(),
+                                FAMILIA = drd["FAMILIA"].ToString(),
+                                LINEA = drd["LINEA"].ToString(),
+                                MARCA = drd["MARCA"].ToString(),
+                                PORTAFOLIO = drd["PORTAFOLIO"].ToString()
+                            };
+                            LISTAREULTADO.Add(ROW_OBJT);
+                            ///  ventas_vrs.Rows.Add(ROW_OBJT.NUM_DOCTO, ROW_OBJT.CLAS_PROD, ROW_OBJT.TIPO_DOCTO, ROW_OBJT.SKU_PRODUCTO, ROW_OBJT.NOM_PRODUCTO);///, obje.MES, obje.ANIO);
+
+
+
+                        }
+
+
+
+
+
+
+                    }
+
+
+
+                }
+
+
+            }
+            catch (Exception e)
+            {
+                ventas_vrs = new DataTable();
+            }
+            var jsonresult = JsonConvert.SerializeObject(LISTAREULTADO);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
+
+            return Areglo_JSON;
+
+
+
+
+
+
+        }
+
         private List<VTS_AND_NCQV> LIST_OBJETOS(DataTable ventas_vrs)
         {
 
