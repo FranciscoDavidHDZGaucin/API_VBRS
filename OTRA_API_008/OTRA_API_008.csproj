@@ -220,7 +220,7 @@
     <Compile Include="Controllers\USUARIOController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\VRSVENTAS_YNC_RSGD_FECHAController.cs" />
-    <Compile Include="Controllers\VRSVENTAS_YNC__RSGDController.cs" />
+    <Compile Include="Controllers\VRSVENTAS_YNC__RSGD_2020Controller.cs" />
     <Compile Include="Controllers\VRSVENTAS_YNC__RSGD_2015Controller.cs" />
     <Compile Include="Controllers\VRSVENTAS_YNC__RSGD_2016Controller.cs" />
     <Compile Include="Controllers\VRSVENTAS_YNC__RSGD_2017Controller.cs" />
@@ -328,6 +328,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile18.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile19.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile20.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
