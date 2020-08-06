@@ -47,7 +47,7 @@ namespace OTRA_API_008.Models
             return Areglo_JSON;
         }
 
-        public   DataTable POST_DATABLE_CLIENTES (int apiCAT_AGENTES )
+        public Newtonsoft.Json.Linq.JArray POST_DATABLE_CLIENTES (int apiCAT_AGENTES )
         {
             DataTable Result = new DataTable();
             try {
@@ -72,12 +72,10 @@ namespace OTRA_API_008.Models
 
             }
 
+            var jsonresult = JsonConvert.SerializeObject(Result);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
 
-
-
-
-
-            return Result;
+            return Areglo_JSON;
         }
 
 

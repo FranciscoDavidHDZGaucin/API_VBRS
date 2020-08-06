@@ -239,6 +239,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\GEP_ESTATUSController.cs" />
+    <Compile Include="Models\GEP_ESTAUS_ALL.cs" />
     <Compile Include="Models\VERSA_VTS_VS_GOPC_SP_2015.cs" />
     <Compile Include="Models\VERSA_VTS_VS_GOPC_SP_2016.cs" />
     <Compile Include="Models\VERSA_VTS_VS_GOPC_SP_2017.cs" />
