@@ -20,6 +20,15 @@ namespace OTRA_API_008.Controllers
             result = CLIENTES.CAT_CLIENTE();
             return result;
         }
+        public Newtonsoft.Json.Linq.JArray Get(int vts_agente)
+        {
+            vwCAT_CLIENTES CLIENTES = new vwCAT_CLIENTES();
+            JArray result = new JArray();
+            result = CLIENTES.POST_DATABLE_CLIENTES(vts_agente);
+            return result;
+
+
+        }
 
 
     }

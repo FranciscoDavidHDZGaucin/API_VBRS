@@ -9,20 +9,18 @@ using System.Web.Http.Cors;
 
 namespace OTRA_API_008.Controllers
 {
-    public class VRSVENTAS_YNC__RSGDController : ApiController
+    public class VRSVENTAS_YNC__RSGD_2017Controller : ApiController
     {
         [EnableCors(origins: "http://192.168.101.128/", headers: "*", methods: "*")]
         public Newtonsoft.Json.Linq.JArray Get()
         {
-            VERSA_VTS_VS_GOPC_SP OBJETO_VENTAS = new VERSA_VTS_VS_GOPC_SP();
+            VERSA_VTS_VS_GOPC_SP_2017 OBJETO_VENTAS = new VERSA_VTS_VS_GOPC_SP_2017();
 
 
 
-            return OBJETO_VENTAS.CALL_SP_VENTASVRSNC(); 
+            return OBJETO_VENTAS.Vts_2017();
 
         }
-
-
 
     }
 }
