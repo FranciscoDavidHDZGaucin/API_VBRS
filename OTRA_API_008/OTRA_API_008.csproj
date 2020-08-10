@@ -201,6 +201,7 @@
     <Compile Include="Controllers\API_PRESUPUESTO_MENSUALController.cs" />
     <Compile Include="Controllers\api_VTS_NOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\BRWSMAINController.cs" />
+    <Compile Include="Controllers\GEP_FILTRO_ALMACENController.cs" />
     <Compile Include="Controllers\VWCARTERAGRUPOSController.cs" />
     <Compile Include="Controllers\FolioTransprtController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -237,6 +238,7 @@
     <Compile Include="Models\Doc_ftrs.cs" />
     <Compile Include="Models\FECHAS_AUTORIZADAS_RSGD.cs" />
     <Compile Include="Models\FECHA_AUTORIZADASController.cs" />
+    <Compile Include="Models\GEP_FILTRO_ALMACEN.cs" />
     <Compile Include="Models\objt_MailMesage.cs" />
     <Compile Include="Models\PLATFORMA_UNES.cs" />
     <Compile Include="Models\apiPRESUPUESTO_DIM.cs" />
