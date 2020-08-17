@@ -10,7 +10,7 @@ namespace OTRA_API_008.Models
 {
     public class PLATFORMA_UNES
     {
-        const string SELECPLATFORM = "SELECT [REMISION]  ,[ZONA] ,[FECHA_ALTA] ,[NOMBRE_CLIENTE] ,[SKU_PRODUCTO] ,[NOM_PRODUCTO]  ,[CAN_PROD]  ,[CANT_FALTA]  ,[PRECIO_PROD]  ,[TOTAL_PROD]    ,[IMPORTE]    ,[XCESTATUS_PEDIDO]   ,[CATEGORIA]  ,[DIVISION]   ,[FAMILIA]    ,[LINEA]    ,[MARCA]    ,[PORTAFOLIO]      ,[PRESENTACION]     ,[U_UNE]   ,[U_ClasCMG]  ,[U_ClasMKT]  FROM[JUPITER].[dbo].[VW__VRSBI_PEDIDOS_PENDIENTES_FINCOMER_C_UNES]";  
+        const string SELECPLATFORM = "SELECT [REMISION]  ,[ZONA] ,[FECHA_ALTA] ,[NOMBRE_CLIENTE] ,[SKU_PRODUCTO] ,[NOM_PRODUCTO]    ,[CANT_FALTA]  ,[PRECIO_PROD]  ,[TOTAL_PROD]    ,[IMPORTE]    ,[XCESTATUS_PEDIDO]   ,[CATEGORIA]  ,[DIVISION]   ,[FAMILIA]    ,[LINEA]    ,[MARCA]    ,[PORTAFOLIO]      ,[PRESENTACION]     ,[U_UNE]   ,[U_ClasCMG]  ,[U_ClasMKT],[NUM_AGE]  FROM[JUPITER].[dbo].[VW__VRSBI_PEDIDOS_PENDIENTES_FINCOMER_C_UNES]";  
 
         SqlDataReader drd;
         public Newtonsoft.Json.Linq.JArray CALL_PLATAFORMA_UNES()
@@ -35,7 +35,7 @@ namespace OTRA_API_008.Models
                                 SKU_PRODUCTO = Convert.ToString(drd["SKU_PRODUCTO"]),
                                 NOM_PRODUCTO = Convert.ToString(drd["NOM_PRODUCTO"]),
 
-                                CAN_PROD = Convert.ToDouble(drd["CAN_PROD"]),
+                                //CAN_PROD = Convert.ToDouble(drd["CAN_PROD"]),
                                 CANT_FALTA = Convert.ToDouble(drd["CANT_FALTA"]),
                                 PRECIO_PROD = Convert.ToDouble(drd["PRECIO_PROD"]),
                                 TOTAL_PROD = Convert.ToDouble(drd["TOTAL_PROD"]),
@@ -54,8 +54,8 @@ namespace OTRA_API_008.Models
                                 U_UNE = Convert.ToString(drd["U_UNE"]),
                                 U_ClasCMG = Convert.ToString(drd["U_ClasCMG"]),
                                 U_ClasMKT = Convert.ToString(drd["U_ClasMKT"]),
-                                MES =  Convert.ToDateTime(drd["FECHA_ALTA"]).Month 
-                          
+                                MES =  Convert.ToDateTime(drd["FECHA_ALTA"]).Month,
+                          NUM_AGE = Convert.ToInt32(drd["NUM_AGE"])
                             };
 
                             _res_json.Add(PEDIDO);
@@ -98,7 +98,7 @@ namespace OTRA_API_008.Models
         public string SKU_PRODUCTO { get; set; }
         public string NOM_PRODUCTO { get; set; }
 
-        public double CAN_PROD { get; set; }
+        //public double CAN_PROD { get; set; }
         public double CANT_FALTA { get; set; }
         public double PRECIO_PROD { get; set; }
         public double TOTAL_PROD { get; set; }
@@ -118,7 +118,9 @@ namespace OTRA_API_008.Models
         public string U_ClasCMG { get; set; }
         public string U_ClasMKT { get; set; }
         public int MES { get; set;   } 
-        
+        public int NUM_AGE { get; set; }
+
+
 
 
     }
