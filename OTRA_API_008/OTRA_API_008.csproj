@@ -201,6 +201,7 @@
     <Compile Include="Controllers\apiOBJETIVO_AGENTESController.cs" />
     <Compile Include="Controllers\apiREPORTE_PEDIDOS_ENTREGAController.cs" />
     <Compile Include="Controllers\apiREPORTE_PEDIDOS_FOLIOSController.cs" />
+    <Compile Include="Controllers\apiTB_GEP_FACTURAController.cs" />
     <Compile Include="Controllers\apiTB_RSGDController.cs" />
     <Compile Include="Controllers\API_PRESUPUESTO_MENSUALController.cs" />
     <Compile Include="Controllers\api_VTS_NOTAS_DE_CREDITOController.cs" />
@@ -241,6 +242,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\apiTB_GEP.cs" />
     <Compile Include="Models\apiTB_RSGD.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\GEP_ESTATUSController.cs" />
@@ -338,6 +340,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile20.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile21.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile22.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile23.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
