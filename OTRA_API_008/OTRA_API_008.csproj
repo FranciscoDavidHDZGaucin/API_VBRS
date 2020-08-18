@@ -203,6 +203,7 @@
     <Compile Include="Controllers\apiREPORTE_PEDIDOS_FOLIOSController.cs" />
     <Compile Include="Controllers\apiTB_GEP_FACTURAController.cs" />
     <Compile Include="Controllers\apiTB_RSGDController.cs" />
+    <Compile Include="Controllers\api_GOPC_PLAN_MAESTROController.cs" />
     <Compile Include="Controllers\API_PRESUPUESTO_MENSUALController.cs" />
     <Compile Include="Controllers\api_VTS_NOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\BRWSMAINController.cs" />
@@ -244,6 +245,7 @@
     </Compile>
     <Compile Include="Models\apiTB_GEP.cs" />
     <Compile Include="Models\apiTB_RSGD.cs" />
+    <Compile Include="Models\api_GOPC_PLAN_MAESTRO.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\GEP_ESTATUSController.cs" />
     <Compile Include="Models\GEP_ESTAUS_ALL.cs" />
