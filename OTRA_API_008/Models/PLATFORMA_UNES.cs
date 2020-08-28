@@ -10,7 +10,7 @@ namespace OTRA_API_008.Models
 {
     public class PLATFORMA_UNES
     {
-        const string SELECPLATFORM = "SELECT [REMISION]  ,[ZONA] ,[FECHA_ALTA] ,[NOMBRE_CLIENTE] ,[SKU_PRODUCTO] ,[NOM_PRODUCTO]    ,[CANT_FALTA]  ,[PRECIO_PROD]  ,[TOTAL_PROD]    ,[IMPORTE]    ,[XCESTATUS_PEDIDO]   ,[CATEGORIA]  ,[DIVISION]   ,[FAMILIA]    ,[LINEA]    ,[MARCA]    ,[PORTAFOLIO]      ,[PRESENTACION]     ,[U_UNE]   ,[U_ClasCMG]  ,[U_ClasMKT],[NUM_AGE]  FROM[JUPITER].[dbo].[VW__VRSBI_PEDIDOS_PENDIENTES_FINCOMER_C_UNES]";  
+        const string SELECPLATFORM = "SELECT [REMISION]  ,[ZONA] ,[FECHA_ALTA] ,[NOMBRE_CLIENTE] ,[SKU_PRODUCTO] ,[NOM_PRODUCTO]    ,[CANT_FALTA]  ,[PRECIO_PROD]  ,[TOTAL_PROD]    ,[IMPORTE]    ,[XCESTATUS_PEDIDO]   ,[CATEGORIA]  ,[DIVISION]   ,[FAMILIA]    ,[LINEA]    ,[MARCA]    ,[PORTAFOLIO]      ,[PRESENTACION]     ,[U_UNE]   ,[U_ClasCMG]  ,[U_ClasMKT],[NUM_AGE],  NOM_AGE, CVE_CLIENTE  FROM[JUPITER].[dbo].[VW__VRSBI_PEDIDOS_PENDIENTES_FINCOMER_C_UNES]";  
 
         SqlDataReader drd;
         public Newtonsoft.Json.Linq.JArray CALL_PLATAFORMA_UNES()
@@ -55,7 +55,9 @@ namespace OTRA_API_008.Models
                                 U_ClasCMG = Convert.ToString(drd["U_ClasCMG"]),
                                 U_ClasMKT = Convert.ToString(drd["U_ClasMKT"]),
                                 MES =  Convert.ToDateTime(drd["FECHA_ALTA"]).Month,
-                          NUM_AGE = Convert.ToInt32(drd["NUM_AGE"])
+                          NUM_AGE = Convert.ToInt32(drd["NUM_AGE"]) ,
+                                NOM_AGE = Convert.ToString(drd["NOM_AGE"]),
+                                CVE_CLIENTE = Convert.ToString(drd["CVE_CLIENTE"])
                             };
 
                             _res_json.Add(PEDIDO);
@@ -120,6 +122,8 @@ namespace OTRA_API_008.Models
         public int MES { get; set;   } 
         public int NUM_AGE { get; set; }
 
+        public string NOM_AGE { get; set; }
+        public string CVE_CLIENTE { get; set; }
 
 
 
