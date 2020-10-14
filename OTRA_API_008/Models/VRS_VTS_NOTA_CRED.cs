@@ -44,14 +44,8 @@ namespace OTRA_API_008.Models
                         if (drd.Read())
                         {
                             TotMontoCRED = Convert.ToDouble(drd["TOTMONTONOTAS"]);
-                           
-
                             _TotMontoCRED = String.Format("$ #,###,##0.00", TotMontoCRED);
-                           
-
                             object[] _objt_TotMontoCRED = { "TotMontoCRED", TotMontoCRED };
-                           
-
                             dtvts.Clear();
 
                             dtvts.Columns.Add("TotMontoCRED", typeof(Double));
