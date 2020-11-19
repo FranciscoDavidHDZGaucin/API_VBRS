@@ -99,7 +99,6 @@ namespace OTRA_API_008.Models
 
 
                         drd = COMANDO.ExecuteReader();
-
                         //ventas_vrs.Columns.Add("NUM_DOCTO", typeof(Int32));
                         //ventas_vrs.Columns.Add("CLAS_PROD", typeof(string));
                         //ventas_vrs.Columns.Add("TIPO_DOCTO", typeof(string));
@@ -110,6 +109,7 @@ namespace OTRA_API_008.Models
 
                         while (drd.Read())
                         {
+                            //int dias_autor = Convert.ToInt32(drd["MINUTOS"]) / 1440 ;
 
 
                             REPORTE_AUTO ROW_OBJT = new REPORTE_AUTO
@@ -127,10 +127,10 @@ namespace OTRA_API_008.Models
                                 UserSign = Convert.ToString(drd["UserSign"]),
                                 AUTORIZO = drd["AUTORIZO"].ToString(),
                                 NUM_AUTORIZA = Convert.ToString(drd["NUM_AUTORIZA"]),
-
                                 MINUTOS = Convert.ToString(drd["MINUTOS"]),
                                 Cancelacion_Suplencia = Convert.ToString(drd["Cancelacion_Suplencia"]),
-                               
+                                DIAS_AUTO = Convert.ToString(drd["DIAS_AUTO"]),
+                                Suplencia_Cancelacion = Convert.ToString(drd["Suplencia_Cancelacion"])
 
                             };
                             LISTAREULTADO.Add(ROW_OBJT);
@@ -253,6 +253,7 @@ namespace OTRA_API_008.Models
         public string NUM_AUTORIZA { get; set; }
         public string MINUTOS { get; set; }
         public string Cancelacion_Suplencia { get; set; }
-        
+        public string DIAS_AUTO { get; set; }
+        public string Suplencia_Cancelacion { get; set; }
     }
 }
