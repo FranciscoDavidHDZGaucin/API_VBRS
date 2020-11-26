@@ -9,7 +9,7 @@ namespace OTRA_API_008.Models
     {
         public Int64 FOLIO { get; set; }
 
-        public DateTime FECHA_CREACION { get; set; }
+        public String FECHA_CREACION { get; set; }
 
         public Int32 ANIO { get; set; }
 
@@ -27,7 +27,7 @@ namespace OTRA_API_008.Models
 
         public Int64 FOLIO { get; set; }
 
-        public DateTime FECHA_CREACION { get; set; }
+        public String   FECHA_CREACION { get; set; }
 
         public Int32 ANIO { get; set; }
 

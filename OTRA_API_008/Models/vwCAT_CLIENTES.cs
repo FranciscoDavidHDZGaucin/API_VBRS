@@ -55,7 +55,7 @@ namespace OTRA_API_008.Models
                 using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.154;Initial Catalog=INEFABLE;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONECT.Open();
-                    using (SqlCommand COMANDO = new SqlCommand(" SELECT COD_CLIENTE,NOM_CLIENTE  FROM vwCAT_CLIENTES WHERE COD_AGENTE1= @_AGENTE OR  COD_AGENTE2 = @_AGENTE ", CONECT))
+                    using (SqlCommand COMANDO = new SqlCommand("SELECT  DISTINCT  COD_CLIENTE,NOM_CLIENTE   FROM VW_RELACION_CLIENTES_GERENTES WHERE  (COD_AGENTE1= @_AGENTE OR  COD_AGENTE2 = @_AGENTE) OR  GERENTE_CRONOS = @_AGENTE", CONECT))
                       {
 
                         COMANDO.Parameters.AddWithValue("@_AGENTE", apiCAT_AGENTES);
