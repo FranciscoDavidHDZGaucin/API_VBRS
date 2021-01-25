@@ -69,7 +69,7 @@ namespace OTRA_API_008.Models
                                     {
                                         FOLIO = Convert.ToInt64(rw["folio"]),
 
-                                        FECHA_CREACION = Convert.ToDateTime(rw["fecha_crea"]),
+                                        FECHA_CREACION = Convert.ToDateTime(rw["fecha_crea"]).ToString("yyyy-MM-dd"),
                                         ANIO = Convert.ToInt32(rw["anio"]),
                                         USUARIO = Convert.ToInt32(rw["USUARIO"]),
                                         TYPE_DOCTO = Convert.ToString(rw["TYPE_DOCTO"]),
@@ -93,7 +93,7 @@ namespace OTRA_API_008.Models
                                   {
                                       FOLIO = Convert.ToInt64(rw["folio"]),
 
-                                      FECHA_CREACION = Convert.ToDateTime(rw["fecha_crea"]),
+                                      FECHA_CREACION = Convert.ToDateTime(rw["fecha_crea"]).ToString("yyyy-MM-dd"),
                                       ANIO = Convert.ToInt32(rw["anio"]),
                                       USUARIO = Convert.ToInt32(rw["USUARIO"]),
                                       TYPE_DOCTO = Convert.ToString(rw["TYPE_DOCTO"]),
