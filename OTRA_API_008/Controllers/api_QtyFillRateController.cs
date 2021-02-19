@@ -33,7 +33,9 @@ namespace OTRA_API_008.Controllers
                 case "UNES_REPORTE":
                     result = Main_objt.QtyFillRate_REPORTE_LOGISTICA_UNES();
                     break;
-
+                case "FACTURAS_BACK":
+                    result = Main_objt.QtyFillRate_FACTURAS_BACK_ORDER();
+                    break;
             }
 
 
