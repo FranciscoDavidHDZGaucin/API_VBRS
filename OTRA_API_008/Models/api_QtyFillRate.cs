@@ -206,5 +206,42 @@ namespace OTRA_API_008.Models
 
 
         }
+
+
+        public Newtonsoft.Json.Linq.JArray QtyFillRate_DETALLE_PEDIDOS_CANTIDA_ORIGINAL_FACTURADA()
+        {  ///VW_QtyFillRate_DETALLE_PEDIDOS_CANTIDA_ORIGINAL_FACTURADA
+
+            DataTable dtvts = new DataTable();
+            try
+            {
+                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
+                {
+                    CONECT.Open();
+                    using (SqlCommand COMANDO = new SqlCommand("SELECT * FROM VW_QtyFillRate_DETALLE_PEDIDOS_CANTIDA_ORIGINAL_FACTURADA", CONECT))
+
+
+                    {
+
+                        dtvts.Load(COMANDO.ExecuteReader());
+
+
+
+
+                    }
+                }
+
+            }
+            catch (Exception e)
+            {
+                dtvts = new DataTable();
+            }
+            var jsonresult = JsonConvert.SerializeObject(dtvts);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
+
+            return Areglo_JSON;
+        }
+
+
+
     }
 }
