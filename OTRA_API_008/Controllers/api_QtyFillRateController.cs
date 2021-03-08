@@ -40,6 +40,9 @@ namespace OTRA_API_008.Controllers
                 case "PEDIDOSCANTIDAD_ORIGINAL":
                     result = Main_objt.QtyFillRate_DETALLE_PEDIDOS_CANTIDA_ORIGINAL_FACTURADA();
                         break;
+                case "ENTREGA002":
+                    result = Main_objt.QTY_FILL_RATE_ENTREGAS_BACK_ORDER();
+                         break;
 
             }
 

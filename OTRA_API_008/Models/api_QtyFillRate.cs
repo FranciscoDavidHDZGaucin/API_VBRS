@@ -241,6 +241,41 @@ namespace OTRA_API_008.Models
             return Areglo_JSON;
         }
 
+        public Newtonsoft.Json.Linq.JArray QTY_FILL_RATE_ENTREGAS_BACK_ORDER()
+        {
+            Boolean CTRL_RECARGA = false;
+            DataTable dtvts = new DataTable();
+            try
+            {
+                using (MySqlConnection myconector = new MySqlConnection(@"server=192.168.101.5; database=pedidos;user id=root; password=avsa0543;"))
+                {
+                    myconector.Open();
+                    using (MySqlCommand spgentabla = new MySqlCommand("SP_QTY_FILL_RATE_ENTREGAS_BACK_ORDER", myconector))
+                    {
+                        spgentabla.CommandType = CommandType.StoredProcedure;
+
+
+                      
+                        dtvts.Load(spgentabla.ExecuteReader());
+
+
+
+
+                    }
+
+                }
+            }
+            catch (Exception e)
+            {
+                dtvts = new DataTable();
+            }
+
+            var jsonresult = JsonConvert.SerializeObject(dtvts);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
+
+            return Areglo_JSON;
+
+        }
 
 
     }
