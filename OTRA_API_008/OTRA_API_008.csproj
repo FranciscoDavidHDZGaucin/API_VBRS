@@ -223,6 +223,7 @@
     <Compile Include="Controllers\api_VWPEDIDOS_FACTURADOSController.cs" />
     <Compile Include="Controllers\api_VW_MES_PROGRAMAENTREGASController.cs" />
     <Compile Include="Controllers\BRWSMAINController.cs" />
+    <Compile Include="Controllers\Fechas_Porcentuales_Controller.cs" />
     <Compile Include="Controllers\FolioTransprtController.cs" />
     <Compile Include="Controllers\GEP_FILTRO_ALMACENController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -262,6 +263,7 @@
     <Compile Include="Models\apiReporteAutorizaciones.cs" />
     <Compile Include="Models\apiTB_GEP.cs" />
     <Compile Include="Models\apiTB_RSGD.cs" />
+    <Compile Include="Models\api_FECHAS_PORCENTUALES.cs" />
     <Compile Include="Models\API_GOPC_FECHAS_AUTORIZADAS.cs" />
     <Compile Include="Models\api_GOPC_PLAN_MAESTRO.cs" />
     <Compile Include="Models\api_GOPC_PLAN_MAESTRO_TIPO.cs" />
