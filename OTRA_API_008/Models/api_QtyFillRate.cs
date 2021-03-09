@@ -255,8 +255,9 @@ namespace OTRA_API_008.Models
                         spgentabla.CommandType = CommandType.StoredProcedure;
 
 
-                      
-                        dtvts.Load(spgentabla.ExecuteReader());
+
+                        MySqlDataAdapter ADP_MY = new MySqlDataAdapter(spgentabla);
+                        ADP_MY.Fill(dtvts);
 
 
 
