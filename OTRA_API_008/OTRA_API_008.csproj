@@ -204,6 +204,7 @@
     <Compile Include="Controllers\apiREPORTE_PEDIDOS_FOLIOSController.cs" />
     <Compile Include="Controllers\apiTB_GEP_FACTURAController.cs" />
     <Compile Include="Controllers\apiTB_RSGDController.cs" />
+    <Compile Include="Controllers\api_FacturasProveedorxPagarController.cs" />
     <Compile Include="Controllers\API_GOPC_FECHAS_AUTORIZADASController.cs" />
     <Compile Include="Controllers\api_GOPC_PLAN_MAESTROController.cs" />
     <Compile Include="Controllers\api_GOPC_PLAN_MAESTRO_TIPOController.cs" />
@@ -263,6 +264,7 @@
     <Compile Include="Models\apiReporteAutorizaciones.cs" />
     <Compile Include="Models\apiTB_GEP.cs" />
     <Compile Include="Models\apiTB_RSGD.cs" />
+    <Compile Include="Models\api_FacturasProveedorxPagar.cs" />
     <Compile Include="Models\api_FECHAS_PORCENTUALES.cs" />
     <Compile Include="Models\API_GOPC_FECHAS_AUTORIZADAS.cs" />
     <Compile Include="Models\api_GOPC_PLAN_MAESTRO.cs" />
