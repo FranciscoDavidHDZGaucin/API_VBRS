@@ -219,6 +219,7 @@
     <Compile Include="Controllers\API_PRESUPUESTO_MENSUALController.cs" />
     <Compile Include="Controllers\api_QtyFillRateController.cs" />
     <Compile Include="Controllers\api_REPORTE_FACTURASController.cs" />
+    <Compile Include="Controllers\api_REPORTE_FACTU_CLIENTEController.cs" />
     <Compile Include="Controllers\api_TB_PPTO_2021Controller.cs" />
     <Compile Include="Controllers\api_VTS_NOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\api_VWPEDIDOS_FACTURADOSController.cs" />
@@ -280,6 +281,7 @@
     <Compile Include="Models\api_MES_spOTIF_Report.cs" />
     <Compile Include="Models\api_QtyFillRate.cs" />
     <Compile Include="Models\api_REPORTE_FACTURAS.cs" />
+    <Compile Include="Models\api_REPORTE_FACTU_CLIENTE.cs" />
     <Compile Include="Models\api_TB_PPTO_2021.cs" />
     <Compile Include="Models\api_VWPEDIDOS_FACTURADOS.cs" />
     <Compile Include="Models\api_VW_MES_PROGRAMAENTREGAS.cs" />
@@ -407,7 +409,10 @@
     <None Include="Properties\PublishProfiles\FolderProfile46.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile47.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile48.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile49.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile50.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile51.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
