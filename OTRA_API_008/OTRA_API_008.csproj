@@ -277,6 +277,7 @@
     <Compile Include="Models\api_LPOBJETIVOS_USD.cs" />
     <Compile Include="Models\api_LPREGIONAL_MXN.cs" />
     <Compile Include="Models\api_LPREGIONAL_USD.cs" />
+    <Compile Include="Models\api_MES_spOTIF_Report.cs" />
     <Compile Include="Models\api_QtyFillRate.cs" />
     <Compile Include="Models\api_REPORTE_FACTURAS.cs" />
     <Compile Include="Models\api_TB_PPTO_2021.cs" />
