@@ -43,6 +43,10 @@ namespace OTRA_API_008.Controllers
                 case "ENTREGA002":
                     result = Main_objt.QTY_FILL_RATE_ENTREGAS_BACK_ORDER();
                          break;
+                case "CORTEFILLRATE":
+                    result = Main_objt.QTY_FILL_RATE_AL_CORTE();
+                    break;
+
 
             }
 
