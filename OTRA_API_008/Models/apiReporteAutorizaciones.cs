@@ -132,6 +132,7 @@ namespace OTRA_API_008.Models
                                 DIAS_AUTO = Convert.ToString(drd["DIAS_AUTO"]),
                                 ZONA = Convert.ToString(drd["ZONA"]),
                                 UNE = Convert.ToString(drd["UNE"]),
+                                MOTIVO = Convert.ToString(drd["MOTIVO"]),
                                 TOTAL = Convert.ToString(drd["DocTotal"]),
                                 Suplencia_Cancelacion = Convert.ToString(drd["Suplencia_Cancelacion"])
 
@@ -259,6 +260,7 @@ namespace OTRA_API_008.Models
         public string DIAS_AUTO { get; set; }
         public string ZONA { get; set; }
         public string UNE { get; set; }
+        public string MOTIVO { get; set; }
         public string TOTAL { get; set; }
         public string Suplencia_Cancelacion { get; set; }
     }
