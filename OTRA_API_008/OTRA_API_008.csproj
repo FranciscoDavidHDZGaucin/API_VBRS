@@ -225,6 +225,7 @@
     <Compile Include="Controllers\api_VTS_NOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\api_VWPEDIDOS_FACTURADOSController.cs" />
     <Compile Include="Controllers\api_VW_MES_PROGRAMAENTREGASController.cs" />
+    <Compile Include="Controllers\BI_PENDIENTES_PLATAFORMAController.cs" />
     <Compile Include="Controllers\BRWSMAINController.cs" />
     <Compile Include="Controllers\Fechas_Porcentuales_Controller.cs" />
     <Compile Include="Controllers\FolioTransprtController.cs" />
@@ -237,6 +238,7 @@
     <Compile Include="Controllers\Prueba_DAVIDVTS_VS_GOPCController.cs" />
     <Compile Include="Controllers\ReclamoMailController.cs" />
     <Compile Include="Controllers\RECLAMOSERVICIOController.cs" />
+    <Compile Include="Controllers\REPORTE_OTIFController.cs" />
     <Compile Include="Controllers\REPORTE_PEDIDOSController.cs" />
     <Compile Include="Controllers\SenmailCalidadController.cs" />
     <Compile Include="Controllers\SP_CICLO_PEDIDOS_VERSA_BIController.cs" />
@@ -266,6 +268,7 @@
     <Compile Include="Models\apiReporteAutorizaciones.cs" />
     <Compile Include="Models\apiTB_GEP.cs" />
     <Compile Include="Models\apiTB_RSGD.cs" />
+    <Compile Include="Models\api_BI_PEDIDOS_PENDIENTES.cs" />
     <Compile Include="Models\api_FacturasProveedorxPagar.cs" />
     <Compile Include="Models\api_FECHAS_PORCENTUALES.cs" />
     <Compile Include="Models\API_GOPC_FECHAS_AUTORIZADAS.cs" />
@@ -283,6 +286,7 @@
     <Compile Include="Models\api_QtyFillRate.cs" />
     <Compile Include="Models\api_REPORTE_FACTURAS.cs" />
     <Compile Include="Models\api_REPORTE_FACTU_CLIENTE.cs" />
+    <Compile Include="Models\api_REPORTE_OTIF.cs" />
     <Compile Include="Models\api_REPORTE_POR_LOTES.cs" />
     <Compile Include="Models\api_TB_PPTO_2021.cs" />
     <Compile Include="Models\api_VWPEDIDOS_FACTURADOS.cs" />
