@@ -204,6 +204,8 @@
     <Compile Include="Controllers\apiREPORTE_PEDIDOS_FOLIOSController.cs" />
     <Compile Include="Controllers\apiTB_GEP_FACTURAController.cs" />
     <Compile Include="Controllers\apiTB_RSGDController.cs" />
+    <Compile Include="Controllers\api_GASTOS_ASIENTOS_CONTController.cs" />
+    <Compile Include="Controllers\api_GASTOS_catalogo_gastosController.cs" />
     <Compile Include="Controllers\api_FacturasProveedorxPagarController.cs" />
     <Compile Include="Controllers\API_GOPC_FECHAS_AUTORIZADASController.cs" />
     <Compile Include="Controllers\api_GOPC_PLAN_MAESTROController.cs" />
@@ -217,6 +219,7 @@
     <Compile Include="Controllers\api_LPREGIONAL_MXNController.cs" />
     <Compile Include="Controllers\api_LPREGIONAL_USDController.cs" />
     <Compile Include="Controllers\api_PARTICIPACION_CULTIVOSController.cs" />
+    <Compile Include="Controllers\api_GASTOS_PPTOController.cs" />
     <Compile Include="Controllers\API_PRESUPUESTO_MENSUALController.cs" />
     <Compile Include="Controllers\api_QtyFillRateController.cs" />
     <Compile Include="Controllers\api_REPORTE_FACTURASController.cs" />
@@ -270,7 +273,9 @@
     <Compile Include="Models\apiReporteAutorizaciones.cs" />
     <Compile Include="Models\apiTB_GEP.cs" />
     <Compile Include="Models\apiTB_RSGD.cs" />
+    <Compile Include="Models\api_GASTOS_ASIENTOS_CONT.cs" />
     <Compile Include="Models\api_BI_PEDIDOS_PENDIENTES.cs" />
+    <Compile Include="Models\api_GASTOS_catalogo_gastos.cs" />
     <Compile Include="Models\api_FacturasProveedorxPagar.cs" />
     <Compile Include="Models\api_FECHAS_PORCENTUALES.cs" />
     <Compile Include="Models\API_GOPC_FECHAS_AUTORIZADAS.cs" />
@@ -286,6 +291,7 @@
     <Compile Include="Models\api_LPREGIONAL_USD.cs" />
     <Compile Include="Models\api_MES_spOTIF_Report.cs" />
     <Compile Include="Models\api_PARTICIPACION_CULTIVOS.cs" />
+    <Compile Include="Models\api_GASTOS_PPTO.cs" />
     <Compile Include="Models\api_QtyFillRate.cs" />
     <Compile Include="Models\api_REPORTE_FACTURAS.cs" />
     <Compile Include="Models\api_REPORTE_FACTU_CLIENTE.cs" />
@@ -427,6 +433,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile53.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile54.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile55.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile56.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
