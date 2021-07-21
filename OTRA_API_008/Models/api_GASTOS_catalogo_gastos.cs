@@ -21,7 +21,7 @@ namespace OTRA_API_008.Models
             DataTable dtvts = new DataTable();
             try
             {
-                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=BDSALESFORCE20200526;User ID=sa;Password=DB@gr0V3rs@"))
+                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONECT.Open();
                     using (SqlCommand COMANDO = new SqlCommand("select Code,Name,U_centro_costos,U_id_cuenta_contable,U_nombre_cuenta,U_clas_PG,U_cuenta_contable,U_nv1_NA,U_nv2_PC,U_UNES,U_MAM,U_direccion,U_gerencia,U_zona from [@CATALOGO_GASTOS2021]", CONECT))

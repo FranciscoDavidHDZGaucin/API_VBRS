@@ -21,7 +21,7 @@ namespace OTRA_API_008.Models
             DataTable dtvts = new DataTable();
             try
             {
-                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=BDSALESFORCE20200526;User ID=sa;Password=DB@gr0V3rs@"))
+                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONECT.Open();
                     using (SqlCommand COMANDO = new SqlCommand("select  * from [@BUD_DETAIL] T1 inner join [@BUD_HEADER] T2 ON T1.Code = T2.Code WHERE T2.U_YEAR = 2021 ", CONECT))
