@@ -222,6 +222,7 @@
     <Compile Include="Controllers\api_GASTOS_PPTOController.cs" />
     <Compile Include="Controllers\API_PRESUPUESTO_MENSUALController.cs" />
     <Compile Include="Controllers\api_QtyFillRateController.cs" />
+    <Compile Include="Controllers\api_REPORTE_AUTO_ORDVENTAController.cs" />
     <Compile Include="Controllers\api_REPORTE_FACTURASController.cs" />
     <Compile Include="Controllers\api_REPORTE_FACTU_CLIENTEController.cs" />
     <Compile Include="Controllers\api_REPORTE_POR_LOTESController.cs" />
@@ -293,6 +294,7 @@
     <Compile Include="Models\api_PARTICIPACION_CULTIVOS.cs" />
     <Compile Include="Models\api_GASTOS_PPTO.cs" />
     <Compile Include="Models\api_QtyFillRate.cs" />
+    <Compile Include="Models\api_REPORTE_AUTO_ORDVENTA.cs" />
     <Compile Include="Models\api_REPORTE_FACTURAS.cs" />
     <Compile Include="Models\api_REPORTE_FACTU_CLIENTE.cs" />
     <Compile Include="Models\api_REPORTE_OTIF.cs" />
@@ -438,6 +440,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile58.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile59.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile60.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile9.pubxml" />
