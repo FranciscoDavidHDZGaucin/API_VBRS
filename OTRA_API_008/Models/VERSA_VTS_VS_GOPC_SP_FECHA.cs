@@ -31,7 +31,7 @@ namespace OTRA_API_008.Models
                     {
                         COMANDO.CommandType = CommandType.StoredProcedure;
                         COMANDO.Parameters.Add("@INI_FCH", SqlDbType.DateTime);
-                        COMANDO.Parameters["@INI_FCH"].Value = "2020-02-01";// _FILTRO_CNTRL.ini_fecha;
+                        COMANDO.Parameters["@INI_FCH"].Value = "2021-02-01";// _FILTRO_CNTRL.ini_fecha;
 
 
                         COMANDO.Parameters.Add("@FIN_FCH", SqlDbType.DateTime);

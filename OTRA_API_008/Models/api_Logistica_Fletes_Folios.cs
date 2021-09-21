@@ -7,25 +7,25 @@ using Newtonsoft.Json.Linq;
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace OTRA_API_008.Models
 {
-    public class api_GASTOS_ASIENTOS_CONT
+    public class api_Logistica_Fletes_Folios
     {
-
         private SqlDataReader drd;
 
         public List<DataTable> _RES_TOTALES = null;
 
-        public Newtonsoft.Json.Linq.JArray ASIENTOS()
+        public Newtonsoft.Json.Linq.JArray Fletes()
         {
 
             DataTable dtvts = new DataTable();
             try
             {
-                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
+                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.154;Initial Catalog=JUPITER;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONECT.Open();
-                    using (SqlCommand COMANDO = new SqlCommand("  select T1.Account, T1.TransId, T1.LineMemo, T1.Debit, T1.Credit,T1.SYSDeb, T1.SYSCred, T1.FCDebit, T1.FCCredit, T1.FCDebit - T1.FCCredit as totdebcred,T1.FCCurrency as [G/L Foreign Currency], T1.Project, T1.RefDate, T3.Segment_0, T3.AcctName, T3.FrgnName from OJDT T0 left join JDT1 T1 ON T0.TransId = T1.TransId LEFT JOIN OACT T3 ON T1.Account = T3.AcctCode where T1.RefDate >='2021-01-01' and T1.RefDate <= GETDATE() and  T3.Segment_0 LIKE  '6%'", CONECT))
+                    using (SqlCommand COMANDO = new SqlCommand("select * from  OPENQUERY([MYSQL_SRV105],'select t1.n_remision,t2.folio, t1.entrega, t4.empresa, t3.comentarios, t3.km_prom_real, t3.flete_prov, t3.maniobras, t3.tot_peso, t3.tot_facturas, (t3.flete_prov*100)/t3.tot_facturas as gasto_flete, t3.flete_prov/t3.km_prom as costo_km, t3.envio_autoriza from pedidos.detalle_pedido t1 join pedidos.envios_det_productos_rf t2 on t1.id_detalle = t2.id_detalle join pedidos.envios_encabeza t3 on t2.folio = t3.folio join pedidos.transportes t4 on t3.n_proveedor = t4.id where t1.fecha_alta >=2021-01-01; ' )", CONECT))
 
 
                     {

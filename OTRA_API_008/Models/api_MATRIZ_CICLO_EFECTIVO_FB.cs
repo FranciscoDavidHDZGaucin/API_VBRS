@@ -9,14 +9,15 @@ using System.Data.SqlClient;
 
 namespace OTRA_API_008.Models
 {
-    public class api_GASTOS_ASIENTOS_CONT
+    public class api_MATRIZ_CICLO_EFECTIVO_FB
     {
+
 
         private SqlDataReader drd;
 
         public List<DataTable> _RES_TOTALES = null;
 
-        public Newtonsoft.Json.Linq.JArray ASIENTOS()
+        public Newtonsoft.Json.Linq.JArray REPORTE()
         {
 
             DataTable dtvts = new DataTable();
@@ -25,11 +26,16 @@ namespace OTRA_API_008.Models
                 using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONECT.Open();
-                    using (SqlCommand COMANDO = new SqlCommand("  select T1.Account, T1.TransId, T1.LineMemo, T1.Debit, T1.Credit,T1.SYSDeb, T1.SYSCred, T1.FCDebit, T1.FCCredit, T1.FCDebit - T1.FCCredit as totdebcred,T1.FCCurrency as [G/L Foreign Currency], T1.Project, T1.RefDate, T3.Segment_0, T3.AcctName, T3.FrgnName from OJDT T0 left join JDT1 T1 ON T0.TransId = T1.TransId LEFT JOIN OACT T3 ON T1.Account = T3.AcctCode where T1.RefDate >='2021-01-01' and T1.RefDate <= GETDATE() and  T3.Segment_0 LIKE  '6%'", CONECT))
+                    using (SqlCommand COMANDO = new SqlCommand("SELECT * FROM [@VRS_MATRIZ_IA_FB_PT]", CONECT))
 
 
                     {
                         dtvts.Load(COMANDO.ExecuteReader());
+
+
+
+
+
 
 
 

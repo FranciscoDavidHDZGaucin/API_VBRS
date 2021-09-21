@@ -212,12 +212,14 @@
     <Compile Include="Controllers\api_GOPC_PLAN_MAESTRO_TIPOController.cs" />
     <Compile Include="Controllers\api_Lista_PreciosController.cs" />
     <Compile Include="Controllers\api_Lista_PreciosUSDController.cs" />
+    <Compile Include="Controllers\api_Logistica_Fletes_FoliosController.cs" />
     <Compile Include="Controllers\api_LPMINIMOS_MXNController.cs" />
     <Compile Include="Controllers\api_LPMINIMOS_USDController.cs" />
     <Compile Include="Controllers\api_LPOBJETIVOS_MXNController.cs" />
     <Compile Include="Controllers\api_LPOBJETIVOS_USDController.cs" />
     <Compile Include="Controllers\api_LPREGIONAL_MXNController.cs" />
     <Compile Include="Controllers\api_LPREGIONAL_USDController.cs" />
+    <Compile Include="Controllers\api_MATRIZ_CICLO_EFECTIVO_FBController.cs" />
     <Compile Include="Controllers\api_PARTICIPACION_CULTIVOSController.cs" />
     <Compile Include="Controllers\api_GASTOS_PPTOController.cs" />
     <Compile Include="Controllers\API_PRESUPUESTO_MENSUALController.cs" />
@@ -226,6 +228,7 @@
     <Compile Include="Controllers\api_REPORTE_FACTURASController.cs" />
     <Compile Include="Controllers\api_REPORTE_FACTU_CLIENTEController.cs" />
     <Compile Include="Controllers\api_REPORTE_POR_LOTESController.cs" />
+    <Compile Include="Controllers\api_TB_PADEMController.cs" />
     <Compile Include="Controllers\api_TB_PPTO_2021Controller.cs" />
     <Compile Include="Controllers\api_SONDEO_PRECIOSController.cs" />
     <Compile Include="Controllers\api_VTS_NOTAS_DE_CREDITOController.cs" />
@@ -284,12 +287,14 @@
     <Compile Include="Models\api_GOPC_PLAN_MAESTRO_TIPO.cs" />
     <Compile Include="Models\api_Lista_Precios.cs" />
     <Compile Include="Models\api_Lista_Precios_USD.cs" />
+    <Compile Include="Models\api_Logistica_Fletes_Folios.cs" />
     <Compile Include="Models\api_LPMINIMOS_MXN.cs" />
     <Compile Include="Models\api_LPMINIMOS_USD.cs" />
     <Compile Include="Models\api_LPOBJETIVOS_MXN.cs" />
     <Compile Include="Models\api_LPOBJETIVOS_USD.cs" />
     <Compile Include="Models\api_LPREGIONAL_MXN.cs" />
     <Compile Include="Models\api_LPREGIONAL_USD.cs" />
+    <Compile Include="Models\api_MATRIZ_CICLO_EFECTIVO_FB.cs" />
     <Compile Include="Models\api_MES_spOTIF_Report.cs" />
     <Compile Include="Models\api_PARTICIPACION_CULTIVOS.cs" />
     <Compile Include="Models\api_GASTOS_PPTO.cs" />
@@ -300,6 +305,7 @@
     <Compile Include="Models\api_REPORTE_OTIF.cs" />
     <Compile Include="Models\api_REPORTE_POR_LOTES.cs" />
     <Compile Include="Models\api_SONDEO_PRECIOS.cs" />
+    <Compile Include="Models\api_TB_PADEM.cs" />
     <Compile Include="Models\api_TB_PPTO_2021.cs" />
     <Compile Include="Models\api_VWPEDIDOS_FACTURADOS.cs" />
     <Compile Include="Models\api_VW_MES_PROGRAMAENTREGAS.cs" />
@@ -442,6 +448,11 @@
     <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile60.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile61.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile62.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile63.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile64.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile65.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile66.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile9.pubxml" />
