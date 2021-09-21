@@ -213,6 +213,7 @@
     <Compile Include="Controllers\api_Lista_PreciosController.cs" />
     <Compile Include="Controllers\api_Lista_PreciosUSDController.cs" />
     <Compile Include="Controllers\api_Logistica_Fletes_FoliosController.cs" />
+    <Compile Include="Controllers\api_Logistica_Fletes_TR_RFController.cs" />
     <Compile Include="Controllers\api_LPMINIMOS_MXNController.cs" />
     <Compile Include="Controllers\api_LPMINIMOS_USDController.cs" />
     <Compile Include="Controllers\api_LPOBJETIVOS_MXNController.cs" />
@@ -288,6 +289,7 @@
     <Compile Include="Models\api_Lista_Precios.cs" />
     <Compile Include="Models\api_Lista_Precios_USD.cs" />
     <Compile Include="Models\api_Logistica_Fletes_Folios.cs" />
+    <Compile Include="Models\api_Logistica_Fletes_TR_RF.cs" />
     <Compile Include="Models\api_LPMINIMOS_MXN.cs" />
     <Compile Include="Models\api_LPMINIMOS_USD.cs" />
     <Compile Include="Models\api_LPOBJETIVOS_MXN.cs" />
