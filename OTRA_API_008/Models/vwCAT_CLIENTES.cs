@@ -52,7 +52,7 @@ namespace OTRA_API_008.Models
             DataTable Result = new DataTable();
             try {
 
-                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.154;Initial Catalog=INEFABLE;User ID=sa;Password=DB@gr0V3rs@"))
+                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.154;Initial Catalog=JUPITER;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONECT.Open();
                     using (SqlCommand COMANDO = new SqlCommand("SELECT  DISTINCT  COD_CLIENTE,NOM_CLIENTE   FROM VW_RELACION_CLIENTES_GERENTES WHERE  (COD_AGENTE1= @_AGENTE OR  COD_AGENTE2 = @_AGENTE) OR  GERENTE_CRONOS = @_AGENTE", CONECT))
