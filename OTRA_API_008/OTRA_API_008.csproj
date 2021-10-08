@@ -229,6 +229,13 @@
     <Compile Include="Controllers\api_REPORTE_FACTURASController.cs" />
     <Compile Include="Controllers\api_REPORTE_FACTU_CLIENTEController.cs" />
     <Compile Include="Controllers\api_REPORTE_POR_LOTESController.cs" />
+    <Compile Include="Controllers\api_SAC_GEP_FOLIOSController.cs" />
+    <Compile Include="Controllers\api_SAC_GEP_INVENTARIOController.cs" />
+    <Compile Include="Controllers\api_SAC_GEP_PEDIDOSController.cs" />
+    <Compile Include="Controllers\api_SAC_PEDIDOS_ELIMINADOSController.cs" />
+    <Compile Include="Controllers\api_SAC_PROMESA_VS_ENTREGAController.cs" />
+    <Compile Include="Controllers\api_SAC_RECLAMOS_CALIDADController.cs.cs" />
+    <Compile Include="Controllers\api_SAC_RECLAMOS_SERVICIOController.cs" />
     <Compile Include="Controllers\api_TB_PADEMController.cs" />
     <Compile Include="Controllers\api_TB_PPTO_2021Controller.cs" />
     <Compile Include="Controllers\api_SONDEO_PRECIOSController.cs" />
@@ -306,6 +313,13 @@
     <Compile Include="Models\api_REPORTE_FACTU_CLIENTE.cs" />
     <Compile Include="Models\api_REPORTE_OTIF.cs" />
     <Compile Include="Models\api_REPORTE_POR_LOTES.cs" />
+    <Compile Include="Models\api_SAC_GEP_FOLIOS.CS" />
+    <Compile Include="Models\api_SAC_GEP_INVENTARIO.cs" />
+    <Compile Include="Models\api_SAC_GEP_PEDIDOS.cs" />
+    <Compile Include="Models\api_SAC_PEDIDOS_ELIMINADOS.cs" />
+    <Compile Include="Models\api_SAC_PROMESA_VS_ENTREGA.cs" />
+    <Compile Include="Models\api_SAC_RECLAMOS_CALIDAD.cs" />
+    <Compile Include="Models\api_SAC_RECLAMOS_SERVICIO.cs" />
     <Compile Include="Models\api_SONDEO_PRECIOS.cs" />
     <Compile Include="Models\api_TB_PADEM.cs" />
     <Compile Include="Models\api_TB_PPTO_2021.cs" />
