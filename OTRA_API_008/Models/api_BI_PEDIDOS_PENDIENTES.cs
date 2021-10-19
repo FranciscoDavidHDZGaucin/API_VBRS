@@ -10,7 +10,7 @@ namespace OTRA_API_008.Models
     public class api_BI_PEDIDOS_PENDIENTES
     {
 
-        public Newtonsoft.Json.Linq.JArray PEDIDOS_PENDIENTES_SAP()
+        public Newtonsoft.Json.Linq.JArray PEDIDOS_PENDIENTES_SAP(int agente )
         {
 
             DataTable dtvts = new DataTable();
@@ -23,6 +23,8 @@ namespace OTRA_API_008.Models
 
 
                     {
+                        COMANDO.CommandType = CommandType.StoredProcedure;
+                        COMANDO.Parameters.Add("@agente", SqlDbType.VarChar).Value = agente;
                         dtvts.Load(COMANDO.ExecuteReader());
 
 

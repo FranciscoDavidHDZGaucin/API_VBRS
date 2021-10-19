@@ -15,11 +15,11 @@ namespace OTRA_API_008.Controllers
     public class apiTB_GEP_FACTURAController : ApiController
     {
 
-        public Newtonsoft.Json.Linq.JArray Get()
+        public Newtonsoft.Json.Linq.JArray Get(int agente)
         {
             apiTB_GEP apiGEP = new apiTB_GEP();
             JArray result = new JArray();
-            result = apiGEP.GEP();
+            result = apiGEP.GEP(agente);
             return result;
         }
 

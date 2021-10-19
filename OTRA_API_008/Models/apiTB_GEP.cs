@@ -17,7 +17,7 @@ namespace OTRA_API_008.Models
 
         public List<DataTable> _RES_TOTALES = null;
 
-        public Newtonsoft.Json.Linq.JArray GEP()
+        public Newtonsoft.Json.Linq.JArray GEP(int agente)
         {
 
             DataTable dtvts = new DataTable();
@@ -26,10 +26,12 @@ namespace OTRA_API_008.Models
                 using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.154;Initial Catalog=JUPITER;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONECT.Open();
-                    using (SqlCommand COMANDO = new SqlCommand("SP_GOPC_PLAN_MAESTRO_PS1_VRS_002", CONECT))
+                    using (SqlCommand COMANDO = new SqlCommand("SP_FACTURAS_POR_AGENTE", CONECT))
 
 
                     {
+                        COMANDO.CommandType = CommandType.StoredProcedure;
+                        COMANDO.Parameters.AddWithValue("@AGENTE", agente);
                         dtvts.Load(COMANDO.ExecuteReader());
 
 
