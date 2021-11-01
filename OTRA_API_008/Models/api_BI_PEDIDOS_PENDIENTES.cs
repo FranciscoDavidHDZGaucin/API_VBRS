@@ -10,7 +10,7 @@ namespace OTRA_API_008.Models
     public class api_BI_PEDIDOS_PENDIENTES
     {
 
-        public Newtonsoft.Json.Linq.JArray PEDIDOS_PENDIENTES_SAP(int agente )
+        public Newtonsoft.Json.Linq.JArray PEDIDOS_PENDIENTES_SAP()
         {
 
             DataTable dtvts = new DataTable();
@@ -20,6 +20,38 @@ namespace OTRA_API_008.Models
                 {
                     CONECT.Open();
                     using (SqlCommand COMANDO = new SqlCommand("SP_DOCUMENTOS_PENDIENTES_SAP", CONECT))
+
+
+                    {
+                        dtvts.Load(COMANDO.ExecuteReader());
+
+
+
+
+                    }
+                }
+
+            }
+            catch (Exception e)
+            {
+                dtvts = new DataTable();
+            }
+            var jsonresult = JsonConvert.SerializeObject(dtvts);
+            JArray Areglo_JSON = JArray.Parse(jsonresult);
+
+            return Areglo_JSON;
+        }
+
+        public Newtonsoft.Json.Linq.JArray PEDIDOS_PENDIENTES_SAC(int agente)
+        {
+
+            DataTable dtvts = new DataTable();
+            try
+            {
+                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
+                {
+                    CONECT.Open();
+                    using (SqlCommand COMANDO = new SqlCommand("SP_DOCUMENTOS_PENDIENTES_SAP_SAC", CONECT))
 
 
                     {

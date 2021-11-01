@@ -13,7 +13,7 @@ namespace OTRA_API_008.Controllers
 
 
 
-        public JArray Get(string PENDIENTEPOR,int agente)
+        public JArray Get(string PENDIENTEPOR)
         {
             Models.api_BI_PEDIDOS_PENDIENTES PENDIENTES = new Models.api_BI_PEDIDOS_PENDIENTES();
             JArray result = new JArray();
@@ -23,8 +23,12 @@ namespace OTRA_API_008.Controllers
             }
             if (PENDIENTEPOR == "SAP")
             {
-                result = PENDIENTES.PEDIDOS_PENDIENTES_SAP(agente);
+                result = PENDIENTES.PEDIDOS_PENDIENTES_SAP();
             }
+            //if (PENDIENTEPOR == "SAC")
+            //{
+            //    result = PENDIENTES.PEDIDOS_PENDIENTES_SAC(agente);
+            //}
             return result;
         }
 

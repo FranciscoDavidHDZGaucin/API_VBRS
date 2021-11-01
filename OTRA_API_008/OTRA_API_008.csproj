@@ -242,6 +242,7 @@
     <Compile Include="Controllers\api_VTS_NOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\api_VWPEDIDOS_FACTURADOSController.cs" />
     <Compile Include="Controllers\api_VW_MES_PROGRAMAENTREGASController.cs" />
+    <Compile Include="Controllers\api_VW_REPORTE_INVENTARIO_BIController.cs" />
     <Compile Include="Controllers\BI_PENDIENTES_PLATAFORMAController.cs" />
     <Compile Include="Controllers\BRWSMAINController.cs" />
     <Compile Include="Controllers\Fechas_Porcentuales_Controller.cs" />
@@ -325,6 +326,7 @@
     <Compile Include="Models\api_TB_PPTO_2021.cs" />
     <Compile Include="Models\api_VWPEDIDOS_FACTURADOS.cs" />
     <Compile Include="Models\api_VW_MES_PROGRAMAENTREGAS.cs" />
+    <Compile Include="Models\api_VW_REPORTE_INVENTARIO_BI.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Controllers\GEP_ESTATUSController.cs" />
     <Compile Include="Models\GEP_ESTAUS_ALL.cs" />
