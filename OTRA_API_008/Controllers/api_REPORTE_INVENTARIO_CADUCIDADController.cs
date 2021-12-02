@@ -12,14 +12,14 @@ using System.Data.SqlClient;
 
 namespace OTRA_API_008.Controllers
 {
-    public class api_SAC_GEP_INVENTARIOController : ApiController
+    public class api_REPORTE_INVENTARIO_CADUCIDADController : ApiController
     {
 
         public Newtonsoft.Json.Linq.JArray Get()
         {
-            api_SAC_GEP_INVENTARIO REPOR = new api_SAC_GEP_INVENTARIO();
+            api_REPORTE_INVENTARIO_CADUCIDAD Progr = new api_REPORTE_INVENTARIO_CADUCIDAD();
             JArray result = new JArray();
-            result = REPOR.GEP();
+            result = Progr.INVENTARIO();
             return result;
         }
     }

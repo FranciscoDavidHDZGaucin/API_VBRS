@@ -23,7 +23,7 @@ namespace OTRA_API_008.Models
                 using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.154;Initial Catalog=JUPITER;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONECT.Open();
-                    using (SqlCommand COMANDO = new SqlCommand("SP_SAC_RECLAMO_SERVICIO_MAIN", CONECT))
+                    using (SqlCommand COMANDO = new SqlCommand("SELECT * FROM [vw_SAC_DETALLE_SERVICIO]", CONECT))
 
 
                     {

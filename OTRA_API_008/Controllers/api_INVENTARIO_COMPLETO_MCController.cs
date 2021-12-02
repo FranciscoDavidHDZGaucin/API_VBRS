@@ -10,17 +10,18 @@ using Newtonsoft.Json.Linq;
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace OTRA_API_008.Controllers
 {
-    public class api_SAC_GEP_INVENTARIOController : ApiController
+    public class api_INVENTARIO_COMPLETO_MCController : ApiController
     {
 
         public Newtonsoft.Json.Linq.JArray Get()
-        {
-            api_SAC_GEP_INVENTARIO REPOR = new api_SAC_GEP_INVENTARIO();
-            JArray result = new JArray();
-            result = REPOR.GEP();
-            return result;
-        }
+    {
+        api_INVENTARIO_COMPLETO_MC INV = new api_INVENTARIO_COMPLETO_MC();
+        JArray result = new JArray();
+        result = INV.INVENTARIO();
+        return result;
     }
+}
 }

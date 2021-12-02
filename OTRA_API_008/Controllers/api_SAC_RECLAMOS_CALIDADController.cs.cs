@@ -17,9 +17,9 @@ namespace OTRA_API_008.Controllers
 
         public Newtonsoft.Json.Linq.JArray Get()
         {
-            api_SONDEO_PRECIOS REPOR = new api_SONDEO_PRECIOS();
+            api_SAC_RECLAMOS_CALIDAD REPOR = new api_SAC_RECLAMOS_CALIDAD();
             JArray result = new JArray();
-            result = REPOR.REPORTE();
+            result = REPOR.RECLAMOS();
             return result;
         }
     }

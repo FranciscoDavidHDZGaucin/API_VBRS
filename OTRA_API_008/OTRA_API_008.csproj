@@ -210,6 +210,7 @@
     <Compile Include="Controllers\API_GOPC_FECHAS_AUTORIZADASController.cs" />
     <Compile Include="Controllers\api_GOPC_PLAN_MAESTROController.cs" />
     <Compile Include="Controllers\api_GOPC_PLAN_MAESTRO_TIPOController.cs" />
+    <Compile Include="Controllers\api_INVENTARIO_COMPLETO_MCController.cs" />
     <Compile Include="Controllers\api_Lista_PreciosController.cs" />
     <Compile Include="Controllers\api_Lista_PreciosUSDController.cs" />
     <Compile Include="Controllers\api_Logistica_Fletes_FoliosController.cs" />
@@ -228,6 +229,7 @@
     <Compile Include="Controllers\api_REPORTE_AUTO_ORDVENTAController.cs" />
     <Compile Include="Controllers\api_REPORTE_FACTURASController.cs" />
     <Compile Include="Controllers\api_REPORTE_FACTU_CLIENTEController.cs" />
+    <Compile Include="Controllers\api_REPORTE_INVENTARIO_CADUCIDADController.cs" />
     <Compile Include="Controllers\api_REPORTE_POR_LOTESController.cs" />
     <Compile Include="Controllers\api_SAC_GEP_FOLIOSController.cs" />
     <Compile Include="Controllers\api_SAC_GEP_INVENTARIOController.cs" />
@@ -294,6 +296,7 @@
     <Compile Include="Models\API_GOPC_FECHAS_AUTORIZADAS.cs" />
     <Compile Include="Models\api_GOPC_PLAN_MAESTRO.cs" />
     <Compile Include="Models\api_GOPC_PLAN_MAESTRO_TIPO.cs" />
+    <Compile Include="Models\api_INVENTARIO_COMPLETO_MC.cs" />
     <Compile Include="Models\api_Lista_Precios.cs" />
     <Compile Include="Models\api_Lista_Precios_USD.cs" />
     <Compile Include="Models\api_Logistica_Fletes_Folios.cs" />
@@ -312,6 +315,7 @@
     <Compile Include="Models\api_REPORTE_AUTO_ORDVENTA.cs" />
     <Compile Include="Models\api_REPORTE_FACTURAS.cs" />
     <Compile Include="Models\api_REPORTE_FACTU_CLIENTE.cs" />
+    <Compile Include="Models\api_REPORTE_INVENTARIO_CADUCIDAD.cs" />
     <Compile Include="Models\api_REPORTE_OTIF.cs" />
     <Compile Include="Models\api_REPORTE_POR_LOTES.cs" />
     <Compile Include="Models\api_SAC_GEP_FOLIOS.CS" />

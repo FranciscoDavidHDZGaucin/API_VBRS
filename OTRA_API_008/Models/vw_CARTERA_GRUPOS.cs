@@ -19,7 +19,7 @@ namespace OTRA_API_008.Models
 
         private DateTime NOWDAY = DateTime.Now;
         private DateTime YEARS_MENOS = DateTime.Now.AddYears(-1);
-        const string SELECPLATFORM = "SELECT  [COD_CLIENTE],[NOM_CLIENTE],AGENTE,[NUM_DOCTO],[SALDO_VENCIDO],[TIPO],[CONTABILIZACION],[VENCIMIENTO],[DIAS]      ,[0-30] as ct030,[31-60] as ts3160 ,[61-90] as sn6190,[91-120] as nu91120,[121-150] as unun121150,[+150] as ci150,[AL_CORRIENTE],[GRUPO],[SlpCode],[UN],CASE WHEN  PLAZO IS NULL THEN   0 ELSE   PLAZO  END  PLAZO,U_IDSFDC FROM [JUPITER].[dbo].[VW_VERSA_BI_CARTERA_GRUPO]";
+        const string SELECPLATFORM = "SELECT [DC], [COD_CLIENTE],[NOM_CLIENTE],AGENTE,[NUM_DOCTO],[SALDO_VENCIDO],[TIPO],[CONTABILIZACION],[VENCIMIENTO],[DIAS]      ,[0-30] as ct030,[31-60] as ts3160 ,[61-90] as sn6190,[91-120] as nu91120,[121-150] as unun121150,[+150] as ci150,[AL_CORRIENTE],[GRUPO],[SlpCode],[UN],CASE WHEN  PLAZO IS NULL THEN   0 ELSE   PLAZO  END  PLAZO,U_IDSFDC FROM [JUPITER].[dbo].[VW_VERSA_BI_CARTERA_GRUPO]";
 
 
         public Newtonsoft.Json.Linq.JArray VWINVENTARIO()
@@ -38,7 +38,7 @@ namespace OTRA_API_008.Models
                             carter_group carter = new carter_group
                             {
 
-
+                                DC = Convert.ToString(drd["DC"]),
                                 COD_CLIENTE = Convert.ToString(drd["COD_CLIENTE"]),
                                 NOM_CLIENTE = Convert.ToString(drd["NOM_CLIENTE"]),
                                 AGENTE = Convert.ToString(drd["AGENTE"]),
@@ -99,6 +99,7 @@ namespace OTRA_API_008.Models
     }
     public class carter_group
     {
+        public string DC { get; set; }
         public string COD_CLIENTE { get; set; }
         public string NOM_CLIENTE { get; set; }
         public string AGENTE { get; set; }

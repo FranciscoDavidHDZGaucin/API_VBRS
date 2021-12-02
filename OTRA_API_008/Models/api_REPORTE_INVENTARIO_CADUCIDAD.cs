@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace OTRA_API_008.Models
 {
-    public class api_VW_REPORTE_INVENTARIO_BI
+    public class api_REPORTE_INVENTARIO_CADUCIDAD
     {
         private SqlDataReader drd;
 
@@ -21,11 +21,12 @@ namespace OTRA_API_008.Models
             DataTable dtvts = new DataTable();
             try
             {
-                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.154;Initial Catalog=JUPITER;User ID=sa;Password=DB@gr0V3rs@"))
+                using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
                 {
                     CONECT.Open();
-                    using (SqlCommand COMANDO = new SqlCommand(" SELECT * FROM [TB_BI_REPORTE_INVENTARIO]  ", CONECT))
-                   
+                    using (SqlCommand COMANDO = new SqlCommand(" SELECT [NUMERO_ARTICULO],[DESCRIPCION_ARTICULO],[Unidad],[BatchNum],[FECHA_CREACION],[FECHA_VENCIMIENTO],[CODIGO_ALMACEN],[NOMBRE_DE_ALMACEN],[CIUDAD],[Status],[NOMBRE_GRUPO],[DIVISION],[FAMILIA],[LINEA],[LINEA_FAMILIA],[Clasificacion_General],[CANTIDAD],[PRECIO_PROMEDIO],[CostoTotal] FROM [AGROVERSA_PRODUCTIVA].[dbo].[vw_REPORTE_INVENTARIO] where[NOMBRE_GRUPO] = 'P. TERMINADO'", CONECT))
+
+
 
                     {
                         dtvts.Load(COMANDO.ExecuteReader());
