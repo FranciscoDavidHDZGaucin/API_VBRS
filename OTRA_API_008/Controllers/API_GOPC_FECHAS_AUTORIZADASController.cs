@@ -15,15 +15,13 @@ namespace OTRA_API_008.Controllers
     public class API_GOPC_FECHAS_AUTORIZADASController : ApiController
     {
 
-        [EnableCors(origins: "http://192.168.101.128/", headers: "*", methods: "*")]
-        public Newtonsoft.Json.Linq.JArray Get()
-        {
-            API_GOPC_FECHAS_AUTORIZADAS OBJETO_VENTAS = new API_GOPC_FECHAS_AUTORIZADAS();
-
-
-
-            return OBJETO_VENTAS.CALL_PLATAFORMA_UNES();
-
+       
+            public Newtonsoft.Json.Linq.JArray Get()
+            {
+                API_GOPC_FECHAS_AUTORIZADAS INV = new API_GOPC_FECHAS_AUTORIZADAS();
+                JArray result = new JArray();
+                result = INV.CALL_PLATAFORMA_UNES();
+                return result;
+            }
         }
-    }
 }

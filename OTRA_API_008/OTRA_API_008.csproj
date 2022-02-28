@@ -210,6 +210,7 @@
     <Compile Include="Controllers\API_GOPC_FECHAS_AUTORIZADASController.cs" />
     <Compile Include="Controllers\api_GOPC_PLAN_MAESTROController.cs" />
     <Compile Include="Controllers\api_GOPC_PLAN_MAESTRO_TIPOController.cs" />
+    <Compile Include="Controllers\api_GOPC_VENTAS_ANIOS_PASADOSController.cs" />
     <Compile Include="Controllers\api_INVENTARIO_COMPLETO_MCController.cs" />
     <Compile Include="Controllers\api_Lista_PreciosController.cs" />
     <Compile Include="Controllers\api_Lista_PreciosUSDController.cs" />
@@ -241,6 +242,7 @@
     <Compile Include="Controllers\api_TB_PADEMController.cs" />
     <Compile Include="Controllers\api_TB_PPTO_2021Controller.cs" />
     <Compile Include="Controllers\api_SONDEO_PRECIOSController.cs" />
+    <Compile Include="Controllers\api_VENTAS_ANIOS_PASADOS_2015_2017Controller.cs" />
     <Compile Include="Controllers\api_VTS_NOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\api_VWPEDIDOS_FACTURADOSController.cs" />
     <Compile Include="Controllers\api_VW_MES_PROGRAMAENTREGASController.cs" />
@@ -296,6 +298,7 @@
     <Compile Include="Models\API_GOPC_FECHAS_AUTORIZADAS.cs" />
     <Compile Include="Models\api_GOPC_PLAN_MAESTRO.cs" />
     <Compile Include="Models\api_GOPC_PLAN_MAESTRO_TIPO.cs" />
+    <Compile Include="Models\api_GOPC_VENTAS_ANIOS_PASADOS.cs" />
     <Compile Include="Models\api_INVENTARIO_COMPLETO_MC.cs" />
     <Compile Include="Models\api_Lista_Precios.cs" />
     <Compile Include="Models\api_Lista_Precios_USD.cs" />
@@ -328,6 +331,7 @@
     <Compile Include="Models\api_SONDEO_PRECIOS.cs" />
     <Compile Include="Models\api_TB_PADEM.cs" />
     <Compile Include="Models\api_TB_PPTO_2021.cs" />
+    <Compile Include="Models\api_VENTAS_ANIOS_PASADOS_2015_2017.cs" />
     <Compile Include="Models\api_VWPEDIDOS_FACTURADOS.cs" />
     <Compile Include="Models\api_VW_MES_PROGRAMAENTREGAS.cs" />
     <Compile Include="Models\api_VW_REPORTE_INVENTARIO_BI.cs" />
