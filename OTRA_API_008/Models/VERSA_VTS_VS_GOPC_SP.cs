@@ -19,7 +19,7 @@ namespace OTRA_API_008.Models
         string fech_real = "";
 
         private  DateTime NOWDAY = DateTime.Now;
-        private DateTime  YEARS_MENOS = DateTime.Now.AddYears(-1);
+        private DateTime  YEARS_MENOS = DateTime.Now.AddMonths(-1);
 
 
 
