@@ -28,13 +28,14 @@ namespace OTRA_API_008.Areas.HelpPage
         public static void SetDocumentationProvider(this HttpConfiguration config, IDocumentationProvider documentationProvider)
         {
             config.Services.Replace(typeof(IDocumentationProvider), documentationProvider);
+
         }
 
-        /// <summary>
-        /// Sets the objects that will be used by the formatters to produce sample requests/responses.
-        /// </summary>
-        /// <param name="config">The <see cref="HttpConfiguration"/>.</param>
-        /// <param name="sampleObjects">The sample objects.</param>
+        // <summary>
+        ///// Sets the objects that will be used by the formatters to produce sample requests/responses.
+        // </summary>
+        // <param name="config">The <see cref="HttpConfiguration"/>.</param>
+        // <param name="sampleObjects">The sample objects.</param>
         public static void SetSampleObjects(this HttpConfiguration config, IDictionary<Type, object> sampleObjects)
         {
             config.GetHelpPageSampleGenerator().SampleObjects = sampleObjects;

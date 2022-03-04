@@ -24,10 +24,11 @@ namespace OTRA_API_008.Models
         DataTable dtvts = new DataTable();
         try
         {
+            //Que esta pasando?
             using (SqlConnection CONECT = new SqlConnection(@"Data Source=192.168.101.22;Initial Catalog=AGROVERSA_PRODUCTIVA;User ID=sa;Password=DB@gr0V3rs@"))
             {
                 CONECT.Open();
-
+                    
                 using (SqlCommand COMANDO = new SqlCommand("SELECT * FROM VW_SAP_ORDENES_COMPRA_PENDIENTES;", CONECT))
 
 
