@@ -28,7 +28,7 @@ namespace OTRA_API_008.Models
             {
                 CONECT.Open();
 
-                using (SqlCommand COMANDO = new SqlCommand("SELECT T0.[DocNum], T0.[DocDate], T0.[CardName], T1.[ItemCode], T1.[Dscription], T1.[Quantity], T1.[OpenQty], T1.[Price], T1.[Rate],T1.[OpenQty]*T1.[Price] AS TotalPendiente, T1.[Currency],IIF(T1.[Currency] = 'USD', (T1.[Price] * T1.[OpenQty]) * T1.[Rate], T1.[OpenQty] * T1.[Price]) AS TotalPendientePesos, T0.Comments, T1.FreeTxt FROM OPOR T0  INNER JOIN POR1 T1 ON T0.[DocEntry] = T1.[DocEntry] WHERE T0.[DocDate] >= '2022-01-01' AND  T0.[DocDate] <='2022-02-28' AND T1.[OpenQty] > 0", CONECT))
+                using (SqlCommand COMANDO = new SqlCommand("SELECT * FROM VW_SAP_ORDENES_COMPRA_PENDIENTES;", CONECT))
 
 
                 {
